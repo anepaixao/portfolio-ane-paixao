@@ -19,8 +19,8 @@ export function Experience() {
             Experiências
           </h2>
           <p className="mt-5 text-base leading-8 text-portfolio-muted sm:text-lg">
-            Experiências que combinam tecnologia, produto digital, pesquisa e
-            liderança em projetos com foco em impacto real.
+            Projetos e experiências que conectam desenvolvimento de software,
+            produto digital, pesquisa e soluções com impacto real.
           </p>
         </div>
 

@@ -9,48 +9,48 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Cofundadora / Produto e Tecnologia',
+    role: 'Produto Digital e Desenvolvimento Mobile',
     organization: 'Blue Eggs',
     period: '2025 — atual',
     description:
-      'Atuação na criação e organização de soluções digitais, com foco em desenvolvimento de produto, liderança de equipe, estruturação de MVPs e comunicação entre áreas técnica e estratégica.',
+      'Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.',
     highlights: [
-      'Estruturação do produto Macuco Entregas',
-      'Organização de escopo para MVP',
+      'Estruturação do produto e escopo do MVP',
+      'Organização de regras de negócio',
+      'Desenvolvimento mobile com React Native e Expo',
       'Comunicação com equipe técnica',
-      'Definição de regras de negócio',
-      'Visão de produto e experiência do usuário',
+      'Foco em experiência do usuário e comércio local',
     ],
-    type: 'Produto & Tecnologia',
+    type: 'Produto & Mobile',
+  },
+  {
+    role: 'Desenvolvimento de Software e Produto',
+    organization: 'Projeto pessoal',
+    period: '2026 — atual',
+    description:
+      'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
+    highlights: [
+      'Organização de contas e categorias financeiras',
+      'Planejamento de funcionalidades do agente',
+      'Foco em usabilidade e clareza das informações',
+      'Aplicação de produto digital a um problema real',
+      'Estruturação inicial de solução com IA aplicada',
+    ],
+    type: 'Software & IA Aplicada',
   },
   {
     role: 'Pesquisadora',
     organization: 'UESC',
     period: '2024 — atual',
     description:
-      'Pesquisa sobre inteligência artificial aplicada à robótica educacional, com foco em educação STEM, análise de ferramentas, revisão bibliográfica e produção técnica.',
+      'Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.',
     highlights: [
       'Pesquisa em IA aplicada',
       'Análise comparativa de ferramentas',
+      'Revisão bibliográfica',
       'Escrita e comunicação técnica',
       'Investigação sobre educação STEM',
-      'Produção acadêmica',
     ],
     type: 'Pesquisa Acadêmica',
-  },
-  {
-    role: 'Desenvolvimento e Produto Digital',
-    organization: 'Projetos próprios e colaborativos',
-    period: '2024 — atual',
-    description:
-      'Desenvolvimento e estruturação de projetos digitais envolvendo aplicativos, automação, e-commerce, discovery, validação de problemas e construção de soluções voltadas para usuários reais.',
-    highlights: [
-      'Desenvolvimento de soluções digitais',
-      'Estudos de automação com IA',
-      'Estruturação de e-commerce',
-      'Validação de problemas reais',
-      'Organização de documentação e processos',
-    ],
-    type: 'Projetos Digitais',
   },
 ];
