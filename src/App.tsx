@@ -1,14 +1,16 @@
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { Experience } from './components/Experience';
+import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
+import { Resume } from './components/Resume';
 import { Skills } from './components/Skills';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-zinc-100">
+    <div className="min-h-screen bg-portfolio-bg text-portfolio-text">
       <Header />
       <main>
         <Hero />
@@ -16,8 +18,10 @@ export default function App() {
         <Projects />
         <Experience />
         <Skills />
+        <Resume />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
