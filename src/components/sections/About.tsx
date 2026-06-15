@@ -21,7 +21,7 @@ export function About() {
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="about-title"
           >
-            Sobre mim
+            Entre tecnologia, produto e pessoas
           </h2>
           <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
         </div>
@@ -30,20 +30,20 @@ export function About() {
           <div className="rounded-3xl border border-white/10 bg-portfolio-card/75 p-6 shadow-xl shadow-black/10 sm:p-8">
             <div className="space-y-5 text-base leading-8 text-portfolio-muted sm:text-lg">
               <p>
-                Sou estudante de Ciência da Computação na UESC e desenvolvedora
-                em formação, com interesse em desenvolvimento front-end/mobile,
+                Sou estudante de Ciência da Computação na UESC e desenvolvedora front-end/mobile 
+                em formação, com interesse em desenvolvimento de software, 
                 produto digital e inteligência artificial aplicada.
               </p>
               <p>
-                Minha trajetória combina programação, pesquisa acadêmica,
-                liderança de projetos e construção de soluções digitais. Tenho
-                experiência com projetos que envolvem aplicativos mobile, MVPs,
-                automação, análise de problemas reais e comunicação com
-                diferentes perfis de pessoas.
+               Minha trajetória combina programação, pesquisa acadêmica, 
+               liderança de projetos e construção de soluções digitais. 
+               Tenho experiência com aplicativos mobile, MVPs, documentação 
+               de regras de negócio, análise de problemas reais e 
+               comunicação com diferentes perfis de pessoas.
               </p>
               <p>
-                Atualmente, busco oportunidades de estágio e posições iniciais
-                onde eu possa aprender, contribuir com times de tecnologia e
+                Atualmente, busco oportunidades de estágio e posições 
+                iniciais onde eu possa aprender, contribuir com times de tecnologia e 
                 desenvolver soluções que gerem impacto para usuários e negócios.
               </p>
             </div>

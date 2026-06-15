@@ -14,22 +14,22 @@ export const projects: Project[] = [
   {
     title: 'Macuco Entregas',
     description:
-      'Aplicativo de delivery local focado em pequenos comércios de Buerarema-BA, desenvolvido como MVP para conectar lojas, consumidores e pedidos em uma experiência simples e acessível.',
+      'Aplicativo mobile de delivery local voltado à modernização do comércio em Buerarema-BA, desenvolvido como MVP para conectar lojas, consumidores e pedidos em uma experiência simples e acessível.',
     tags: ['React Native', 'Expo', 'TypeScript', 'Produto Digital', 'MVP', 'Liderança'],
     highlights: [
       'Liderança na organização do produto e equipe',
       'Definição de escopo para MVP',
       'Construção de experiência mobile',
       'Regras de negócio para comércio local',
-      'Pensamento de produto e validação',
+      'Pensamento de produto e entendimento do comércio local',
     ],
     status: 'Em desenvolvimento',
   },
   {
-    title: 'FinanceirAne',
+    title: 'Financeirane',
     description:
-      'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
-    tags: ['TypeScript', 'Produto Digital', 'IA Aplicada', 'Finanças', 'MVP'],
+      'Assistente financeira pessoal em desenvolvimento, criada para apoiar o registro, organização e acompanhamento de gastos, conectando automação, dados, experiência conversacional e educação financeira.',
+    tags: ['Finanças', 'IA Aplicada', 'Automação', 'Dados', 'Produto Digital'],
     highlights: [
       'Organização de contas e categorias financeiras',
       'Planejamento de funcionalidades do agente',

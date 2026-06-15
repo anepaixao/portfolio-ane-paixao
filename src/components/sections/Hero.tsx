@@ -14,11 +14,11 @@ export function Hero() {
       <div className="section-shell grid min-h-[calc(100svh-64px)] items-center gap-12 py-20 sm:py-24 lg:grid-cols-[1.08fr_0.92fr] lg:py-28">
         <div className="max-w-3xl">
           <p className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
-            Desenvolvedora Front-end/Mobile | Produto Digital | IA Aplicada
+           Desenvolvedora de Software | Produto Digital | IA Aplicada
           </p>
 
           <h1 className="mt-7 text-4xl font-black leading-tight text-portfolio-text sm:text-5xl lg:text-7xl">
-            Olá, eu sou Ane.
+            Olá, eu sou Ane Paixão.
           </h1>
 
           <p className="mt-6 max-w-2xl text-2xl font-semibold leading-snug text-portfolio-text sm:text-3xl">
@@ -27,9 +27,9 @@ export function Hero() {
           </p>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-            Estudante de Ciência da Computação, desenvolvedora em formação e
-            criadora de soluções digitais com foco em experiência do usuário,
-            tecnologia aplicada e resolução de problemas reais.
+            Estudante de Ciência da Computação e desenvolvedora de software 
+            em formação, com experiência prática em projetos digitais, produto, 
+            IA aplicada e resolução de problemas reais.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

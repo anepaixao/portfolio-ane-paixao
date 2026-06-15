@@ -9,7 +9,7 @@ export const skills: SkillCategory[] = [
     category: 'Desenvolvimento Front-end/Mobile',
     description:
       'Criação de interfaces e experiências digitais responsivas, com foco em usabilidade, organização de componentes e desenvolvimento mobile.',
-    skills: ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'Tailwind CSS'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Linux', 'Notion', 'Figma', 'Trello', 'Kanban', 'Documentação técnica'],
   },
   {
     category: 'Desenvolvimento de Software',
