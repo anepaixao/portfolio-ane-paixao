@@ -1,12 +1,10 @@
-# Portifólio
-
-# Planejamento do Portfólio Profissional - Ane
+# Planejamento do Portfolio Profissional - Ane
 
 ## 1. Objetivo do site
 
-Criar um portfólio profissional, moderno e recrutador-friendly para apresentar a trajetória, projetos, habilidades e posicionamento profissional de Ane como desenvolvedora em formação, com foco em desenvolvimento front-end/mobile, produto digital e IA aplicada.
+Criar um portfolio profissional, moderno e recrutador-friendly para apresentar a trajetoria, projetos, habilidades e posicionamento profissional de Ane como desenvolvedora em formacao, com foco em desenvolvimento front-end/mobile, produto digital e IA aplicada.
 
-O site deve funcionar como uma extensão visual do LinkedIn, currículo e GitHub, mantendo uma identidade consistente, tecnológica e profissional.
+O site deve funcionar como uma extensao visual do LinkedIn, curriculo e GitHub, mantendo uma identidade consistente, tecnologica e profissional.
 
 ---
 
@@ -14,27 +12,27 @@ O site deve funcionar como uma extensão visual do LinkedIn, currículo e GitHub
 
 ### Frase principal
 
-Construindo produtos digitais com tecnologia, propósito e visão de usuário.
+Construindo produtos digitais com tecnologia, proposito e visao de usuario.
 
-### Título profissional
+### Titulo profissional
 
 Desenvolvedora Front-end/Mobile | Produto Digital | IA Aplicada
 
-### Descrição curta
+### Descricao curta
 
-Estudante de Ciência da Computação, desenvolvedora em formação e criadora de soluções digitais com foco em experiência do usuário, tecnologia aplicada e resolução de problemas reais.
+Estudante de Ciencia da Computacao, desenvolvedora em formacao e criadora de solucoes digitais com foco em experiencia do usuario, tecnologia aplicada e resolucao de problemas reais.
 
 ---
 
-## 3. Público-alvo
+## 3. Publico-alvo
 
-O portfólio será pensado principalmente para:
+O portfolio sera pensado principalmente para:
 
-- Recrutadores de estágio e vagas júnior;
-- Pessoas técnicas avaliando projetos no GitHub;
+- Recrutadores de estagio e vagas junior;
+- Pessoas tecnicas avaliando projetos no GitHub;
 - Profissionais de produto e tecnologia;
 - Contatos de networking;
-- Possíveis parceiros de projetos.
+- Possiveis parceiros de projetos.
 
 ---
 
@@ -42,9 +40,9 @@ O portfólio será pensado principalmente para:
 
 ### Estilo
 
-O site terá uma identidade visual moderna, tecnológica e elegante, com base escura, gradientes em roxo e azul, cards bem definidos e animações leves.
+O site tera uma identidade visual moderna, tecnologica e elegante, com base escura, gradientes em roxo e azul, cards bem definidos e animacoes leves.
 
-A intenção é transmitir:
+A intencao e transmitir:
 
 - Tecnologia;
 - Criatividade;
@@ -62,13 +60,13 @@ Cards: `#1B123A`
 
 Roxo principal: `#6D3BFF`
 
-Azul elétrico: `#3B82F6`
+Azul eletrico: `#3B82F6`
 
-Lilás/acento: `#A78BFA`
+Lilas/acento: `#A78BFA`
 
 Texto principal: `#F8FAFC`
 
-Texto secundário: `#CBD5E1`
+Texto secundario: `#CBD5E1`
 
 ### Tipografia sugerida
 
@@ -76,406 +74,391 @@ Fonte principal: Inter, Sora ou Space Grotesk
 
 Fonte alternativa: system-ui
 
-Recomendação: usar Inter para melhor legibilidade e aparência profissional.
+Recomendacao: usar Inter para melhor legibilidade e aparencia profissional.
 
 ---
 
 ## 5. Estrutura do site
 
-O portfólio será uma landing page de página única, com navegação por seções.
+O portfolio sera uma landing page de pagina unica, com navegacao por secoes.
 
-### Seções principais
+### Secoes principais
 
-1. Início
+1. Inicio
 2. Sobre mim
 3. Projetos
-4. Experiências
+4. Experiencias
 5. Habilidades
-6. Currículo
+6. Curriculo
 7. Contato
 
 ---
 
-# 6. Seção: Início / Hero
+## 6. Secao: Inicio / Hero
 
-## Objetivo
+### Objetivo
 
-Apresentar imediatamente quem é Ane, qual seu posicionamento profissional e quais ações o visitante pode tomar.
+Apresentar imediatamente quem e Ane, qual seu posicionamento profissional e quais acoes o visitante pode tomar.
 
-## Conteúdo
+### Conteudo
 
-Título:
+Titulo:
 
-Olá, eu sou Ane.
+Ola, eu sou Ane.
 
-Subtítulo:
+Subtitulo:
 
-Desenvolvedora Front-end/Mobile em formação, estudante de Ciência da Computação e criadora de produtos digitais com foco em tecnologia, experiência do usuário e IA aplicada.
+Desenvolvedora Front-end/Mobile em formacao, estudante de Ciencia da Computacao e criadora de produtos digitais com foco em tecnologia, experiencia do usuario e IA aplicada.
 
 Frase de impacto:
 
-Construindo produtos digitais com tecnologia, propósito e visão de usuário.
+Construindo produtos digitais com tecnologia, proposito e visao de usuario.
 
-## Botões
+### Botoes
 
-- Ver projetos
-- Baixar currículo
-- Entrar em contato
+- Ver projetos;
+- Baixar curriculo;
+- Entrar em contato.
 
-## Elementos visuais
+### Elementos visuais
 
 - Fundo escuro com gradientes roxo e azul;
 - Formas abstratas ou glow effect;
-- Possível card lateral com resumo profissional;
-- Ícones de tecnologia de forma sutil;
-- Animação leve de entrada.
+- Possivel card lateral com resumo profissional;
+- Icones de tecnologia de forma sutil;
+- Animacao leve de entrada.
 
 ---
 
-# 7. Seção: Sobre mim
+## 7. Secao: Sobre mim
 
-## Objetivo
+### Objetivo
 
-Explicar quem é Ane de forma humana, profissional e estratégica.
+Explicar quem e Ane de forma humana, profissional e estrategica.
 
-## Conteúdo sugerido
+### Conteudo sugerido
 
-Sou estudante de Ciência da Computação na UESC e desenvolvedora em formação, com interesse em desenvolvimento de software, produto digital e inteligência artificial aplicada.
+Sou estudante de Ciencia da Computacao na UESC e desenvolvedora em formacao, com interesse em desenvolvimento de software, produto digital e inteligencia artificial aplicada.
 
-Minha trajetória combina programação, pesquisa acadêmica, liderança de projetos e construção de soluções digitais. Tenho experiência com projetos que envolvem aplicativos mobile, MVPs, automação, análise de problemas reais e comunicação com diferentes perfis de pessoas.
+Minha trajetoria combina programacao, pesquisa academica, lideranca de projetos e construcao de solucoes digitais. Tenho experiencia com projetos que envolvem aplicativos mobile, MVPs, automacao, analise de problemas reais e comunicacao com diferentes perfis de pessoas.
 
-Atualmente, busco oportunidades de estágio ou posições iniciais onde eu possa aprender, contribuir com times de tecnologia e desenvolver soluções que gerem impacto para usuários e negócios.
+Atualmente, busco oportunidades de estagio ou posicoes iniciais onde eu possa aprender, contribuir com times de tecnologia e desenvolver solucoes que gerem impacto para usuarios e negocios.
 
-## Pontos de destaque
+### Pontos de destaque
 
-- Estudante de Ciência da Computação;
+- Estudante de Ciencia da Computacao;
 - Desenvolvimento front-end/mobile;
 - Produto digital e MVP;
 - Pesquisa em IA aplicada;
-- Liderança e organização de projetos.
+- Lideranca e organizacao de projetos.
 
 ---
 
-# 8. Seção: Projetos
+## 8. Secao: Projetos
 
-## Objetivo
+### Objetivo
 
-Mostrar projetos com clareza, explicando problema, solução, tecnologias e aprendizados.
+Mostrar tres projetos principais da V1 com clareza, explicando problema, solucao, tecnologias, aprendizados e relacao com desenvolvimento de software, produto digital e IA aplicada.
 
-## Projetos principais
+### Projeto 1 - Macuco Entregas
 
-### 1. Macuco Entregas
+Descricao:
 
-Descrição:
-
-Aplicativo de delivery local focado em pequenos comércios de Buerarema-BA, desenvolvido como MVP para conectar lojas, consumidores e pedidos em uma experiência simples e acessível.
+Aplicativo mobile de delivery local voltado a modernizacao do comercio em Buerarema-BA, com foco em experiencia mobile, regras de negocio, MVP e organizacao de produto.
 
 Tags:
 
-React Native, Expo, TypeScript, Produto Digital, MVP, Liderança
+React Native, Expo, TypeScript, Produto Digital, MVP, Lideranca
 
 Destaques:
 
-- Liderança na organização do produto e equipe;
-- Definição de escopo para MVP;
-- Construção de experiência mobile;
-- Regras de negócio para comércio local;
-- Pensamento de produto e validação.
+- Desenvolvimento front-end/mobile;
+- Estruturacao de telas, componentes e fluxos;
+- Definicao de escopo do MVP;
+- Documentacao de regras de negocio;
+- Lideranca e organizacao da equipe.
 
 ---
 
-### 2. FinanceirAne
+### Projeto 2 - Financeirane
 
-Descrição:
+Descricao:
 
-Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.
+Assistente financeira pessoal em desenvolvimento, focada em apoiar o registro, organizacao e acompanhamento de gastos, conectando automacao, dados, experiencia conversacional e educacao financeira.
 
 Tags:
 
-TypeScript, Produto Digital, IA Aplicada, Finanças, MVP
+Financas, IA Aplicada, Automacao, Dados, Produto Digital
 
 Destaques:
 
-- Organização de contas e categorias financeiras;
-- Planejamento de funcionalidades do agente;
-- Foco em usabilidade e clareza das informações;
-- Aplicação de produto digital a um problema real;
-- Estruturação inicial de solução com IA aplicada.
+- Organizacao de informacoes financeiras;
+- Experiencia conversacional;
+- Automacao de registros e acompanhamento;
+- Estruturacao de dados;
+- Projeto em desenvolvimento.
 
 ---
 
-### 3. IA na Robótica Educacional
+### Projeto 3 - IA na Robotica Educacional
 
-Descrição:
+Descricao:
 
-Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.
+Projeto de iniciacao cientifica sobre o uso de inteligencia artificial na robotica educacional, investigando potencialidades, desafios e aplicacoes no contexto da educacao STEM.
 
 Tags:
 
-IA Aplicada, Pesquisa, Educação STEM, Robótica Educacional, Comunicação Técnica
+IA Aplicada, Pesquisa, Educacao STEM, Robotica Educacional, Comunicacao Tecnica
 
 Destaques:
 
-- Pesquisa acadêmica;
-- Análise comparativa de ferramentas;
-- Escrita técnica;
-- Comunicação científica;
-- Aplicações de IA na educação.
+- Pesquisa academica;
+- Analise comparativa de ferramentas;
+- Escrita tecnica;
+- Comunicacao cientifica;
+- Aplicacoes de IA na educacao.
 
 ---
 
-## Projetos futuros / V2
+## 9. Secao: Experiencias
 
-- Agente de IA para Clínica Odontológica;
-- Casaê Brasil.
+### Objetivo
 
----
+Mostrar experiencias relevantes alem de empregos formais, conectando pratica em produto, pesquisa, lideranca e desenvolvimento.
 
-# 9. Seção: Experiências
+### Experiencias da V1
 
-## Objetivo
+#### Blue Eggs - Cofundadora / Produto e Tecnologia
 
-Mostrar experiências relevantes além de empregos formais.
+Atuacao na criacao e organizacao de solucoes digitais, com foco em desenvolvimento de produto, lideranca de equipe, estruturacao de MVPs e comunicacao entre areas tecnica e estrategica.
 
-## Experiências sugeridas para V1
+#### Iniciacao Cientifica - Pesquisadora
 
-### Macuco Entregas — Produto Digital e Desenvolvimento Mobile
+Pesquisa sobre inteligencia artificial aplicada a robotica educacional, com foco em educacao STEM, analise de ferramentas, revisao bibliografica e producao tecnica.
 
-Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.
+#### Projetos de Produto, IA e Desenvolvimento
 
-### FinanceirAne — Desenvolvimento de Software e Produto
-
-Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.
-
-### IA na Robótica Educacional — Pesquisadora
-
-Pesquisa sobre inteligência artificial aplicada à robótica educacional, com foco em educação STEM, análise de ferramentas, revisão bibliográfica e produção técnica.
-
-### Projetos de Produto, IA e Desenvolvimento
-
-Eixo geral que conecta os projetos da V1 a desenvolvimento de software, produto digital, pesquisa e soluções com impacto real.
+Desenvolvimento e estruturacao de projetos digitais envolvendo aplicativos, automacao, dados, discovery inicial, validacao de problemas reais e construcao de solucoes voltadas para usuarios.
 
 ---
 
-# 10. Seção: Habilidades
+## 10. Secao: Habilidades
 
-## Objetivo
+### Objetivo
 
 Organizar habilidades de forma clara, sem parecer exagerada.
 
-## Categorias
+### Categorias
 
-### Desenvolvimento Front-end/Mobile
+#### Desenvolvimento Front-end/Mobile
 
-- React
-- React Native
-- Expo
-- TypeScript
-- JavaScript
-- HTML
-- CSS
-- Tailwind CSS
+- React;
+- React Native;
+- Expo;
+- TypeScript;
+- JavaScript;
+- HTML;
+- CSS;
+- Tailwind CSS.
 
-### Desenvolvimento de Software
+#### Desenvolvimento de Software
 
-- JavaScript
-- TypeScript
-- Python
-- Node.js
-- C
-- APIs REST
-- Lógica de programação
-- Organização de projetos
+- JavaScript;
+- TypeScript;
+- Python;
+- Node.js;
+- C;
+- APIs REST;
+- Logica de programacao;
+- Organizacao de projetos.
 
-### Produto Digital
+#### Produto Digital
 
-- Entendimento de problemas
-- Discovery inicial
-- MVP
-- User stories
-- Priorização
-- Regras de negócio
-- Visão de usuário
-- Comunicação com stakeholders
+- Entendimento de problemas;
+- Discovery inicial;
+- MVP;
+- User stories;
+- Priorizacao;
+- Regras de negocio;
+- Visao de usuario;
+- Comunicacao com stakeholders.
 
-### IA Aplicada e Pesquisa
+#### IA Aplicada e Pesquisa
 
-- Pesquisa acadêmica
-- Análise comparativa
-- IA aplicada à educação
-- Automação com IA
-- Escrita técnica
+- Pesquisa academica;
+- Analise comparativa;
+- IA aplicada a educacao;
+- Automacao com IA;
+- Escrita tecnica.
 
-### Ferramentas e Organização
+#### Ferramentas e Organizacao
 
-- Git
-- GitHub
-- VS Code
-- Linux
-- Notion
-- Figma
-- Trello/Kanban
+- Git;
+- GitHub;
+- VS Code;
+- Linux;
+- Notion;
+- Figma;
+- Trello/Kanban.
 
 ---
 
-# 11. Seção: Currículo
+## 11. Secao: Curriculo
 
-## Objetivo
+### Objetivo
 
-Facilitar o acesso ao currículo em PDF.
+Facilitar o acesso a um curriculo principal em PDF.
 
-## Conteúdo
+### Conteudo
 
 Texto:
 
-Quer conhecer minha trajetória com mais detalhes?
+Curriculo com foco em desenvolvimento de software, front-end/mobile, produto digital e IA aplicada.
 
-Disponibilizo meu currículo principal com foco em desenvolvimento de software, front-end/mobile, produto digital e inteligência artificial aplicada.
+Botao:
 
-Botão:
+Baixar curriculo
 
-Baixar currículo
+Observacao:
 
-Observação:
-
-O currículo deve estar atualizado e alinhado com o LinkedIn, GitHub e portfólio.
+O curriculo deve estar atualizado e alinhado com LinkedIn, GitHub e portfolio.
 
 ---
 
-# 12. Seção: Contato
+## 12. Secao: Contato
 
-## Objetivo
+### Objetivo
 
-Permitir contato rápido e profissional.
+Permitir contato rapido e profissional.
 
-## Itens
+### Itens
 
-- LinkedIn
-- GitHub
-- E-mail
-- WhatsApp, se desejar
+- LinkedIn;
+- GitHub;
+- E-mail.
 
 Texto sugerido:
 
-Estou aberta a oportunidades de estágio, projetos colaborativos e conexões na área de tecnologia, produto digital e inteligência artificial aplicada.
+Estou aberta a oportunidades de estagio, projetos colaborativos e conexoes na area de tecnologia, produto digital e inteligencia artificial aplicada.
 
-Botão:
+Botao:
 
 Entrar em contato
 
 ---
 
-# 13. Requisitos técnicos
+## 13. Requisitos tecnicos
 
-## Stack
+### Stack
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion
-- Lucide React
+- React;
+- TypeScript;
+- Vite;
+- Tailwind CSS;
+- Framer Motion;
+- Lucide React.
 
-## Requisitos do site
+### Requisitos do site
 
 - Responsivo para celular, tablet e desktop;
 - Boa legibilidade;
-- Navegação suave entre seções;
-- Código organizado por componentes;
-- Dados de projetos separados em arquivos próprios;
+- Navegacao suave entre secoes;
+- Codigo organizado por componentes;
+- Dados de projetos separados em arquivos proprios;
 - README bem documentado;
 - Deploy na Vercel.
 
 ---
 
-# 14. Estrutura de pastas
+## 14. Estrutura de pastas
 
+```txt
 src/
-  assets/
-    images/
-    resume/
-  components/
-    layout/
-      Header.tsx
-      Footer.tsx
-    sections/
-      Hero.tsx
-      About.tsx
-      Projects.tsx
-      Experience.tsx
-      Skills.tsx
-      Resume.tsx
-      Contact.tsx
-    ui/
-      Button.tsx
-      SectionTitle.tsx
-      ProjectCard.tsx
-      SkillCard.tsx
-  data/
-    projects.ts
-    skills.ts
-    experiences.ts
-  App.tsx
-  main.tsx
-  index.css
+assets/
+images/
+resume/
+components/
+layout/
+Header.tsx
+Footer.tsx
+sections/
+Hero.tsx
+About.tsx
+Projects.tsx
+Experience.tsx
+Skills.tsx
+Resume.tsx
+Contact.tsx
+ui/
+Button.tsx
+SectionTitle.tsx
+ProjectCard.tsx
+SkillCard.tsx
+data/
+projects.ts
+skills.ts
+experiences.ts
+App.tsx
+main.tsx
+index.css
+```
 
 ---
 
-# 15. Ordem de desenvolvimento
+## 15. Ordem de desenvolvimento
 
-## Etapa 1 — Setup
+### Etapa 1 - Setup
 
 - Criar projeto com Vite;
 - Configurar TypeScript;
 - Configurar Tailwind CSS;
-- Criar estrutura de pastas;
-- Fazer primeiro commit.
+- Criar estrutura de pastas.
 
-## Etapa 2 — Base visual
+### Etapa 2 - Base visual
 
 - Definir paleta no Tailwind;
 - Criar estilos globais;
 - Criar layout base;
 - Criar Header e Footer.
 
-## Etapa 3 — Hero
+### Etapa 3 - Hero
 
-- Criar seção inicial;
-- Adicionar título, subtítulo e botões;
+- Criar secao inicial;
+- Adicionar titulo, subtitulo e botoes;
 - Adicionar gradientes e elementos visuais;
 - Ajustar responsividade.
 
-## Etapa 4 — Sobre mim
+### Etapa 4 - Sobre mim
 
 - Criar texto profissional;
 - Adicionar cards de destaque;
 - Organizar layout.
 
-## Etapa 5 — Projetos
+### Etapa 5 - Projetos
 
 - Criar arquivo de dados dos projetos;
-- Criar cards reutilizáveis;
-- Adicionar tags e descrições;
-- Incluir links para GitHub ou demo quando existirem.
+- Renderizar os tres projetos principais da V1;
+- Criar cards reutilizaveis;
+- Adicionar tags, descricoes e destaques.
 
-## Etapa 6 — Experiências
+### Etapa 6 - Experiencias
 
 - Criar linha do tempo ou cards;
-- Adicionar Macuco Entregas, FinanceirAne e IA na Robótica Educacional.
+- Adicionar Blue Eggs, Iniciacao Cientifica e Projetos de Produto, IA e Desenvolvimento.
 
-## Etapa 7 — Habilidades
+### Etapa 7 - Habilidades
 
 - Organizar habilidades por categoria;
 - Usar cards ou chips;
 - Evitar excesso visual.
 
-## Etapa 8 — Currículo e contato
+### Etapa 8 - Curriculo e contato
 
-- Adicionar PDF do currículo;
-- Criar botões para LinkedIn, GitHub e e-mail;
+- Adicionar PDF do curriculo principal;
+- Criar botoes para LinkedIn, GitHub e e-mail;
 - Finalizar CTA.
 
-## Etapa 9 — Ajustes finais
+### Etapa 9 - Ajustes finais
 
 - Revisar textos;
 - Testar responsividade;
@@ -486,32 +469,33 @@ src/
 
 ---
 
-# 16. Critérios de qualidade
+## 16. Criterios de qualidade
 
-O portfólio estará pronto para divulgação quando:
+O portfolio estara pronto para divulgacao quando:
 
 - Estiver responsivo;
 - Tiver boa leitura no celular;
-- Tiver pelo menos 3 projetos bem explicados;
+- Tiver os 3 projetos principais bem explicados;
 - Tiver links funcionando;
-- Tiver currículo para download;
+- Tiver curriculo para download;
 - Tiver README profissional;
 - Estiver publicado online;
-- Tiver identidade visual consistente com LinkedIn, GitHub e currículo.
+- Tiver identidade visual consistente com LinkedIn, GitHub e curriculo.
 
 ---
 
-# 17. Primeira versão ideal
+## 17. Primeira versao ideal
 
-A primeira versão não precisa ser perfeita. Ela precisa ser clara, bonita, funcional e profissional.
+A primeira versao nao precisa ser perfeita. Ela precisa ser clara, bonita, funcional e profissional.
 
-Prioridade da versão 1:
+Prioridade da V1:
 
 - Hero forte;
 - Sobre objetivo;
 - Projetos bem explicados;
-- Contato fácil;
+- Experiencias relevantes e conectadas ao posicionamento;
+- Contato facil;
 - Visual consistente;
 - Deploy funcionando.
 
-Animações, imagens avançadas e detalhes extras podem entrar depois.
+Animacoes, imagens avancadas e detalhes extras podem entrar depois.

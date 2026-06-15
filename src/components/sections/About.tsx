@@ -52,7 +52,7 @@ export function About() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {highlights.map((highlight) => (
               <article
-                className="rounded-lg border border-white/10 bg-portfolio-card p-5 transition hover:border-portfolio-lilac/60"
+                className="rounded-lg border border-white/10 bg-portfolio-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60"
                 key={highlight}
               >
                 <div className="mb-5 size-2 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />

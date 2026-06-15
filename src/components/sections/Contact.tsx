@@ -54,7 +54,7 @@ export function Contact() {
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
               {contactLinks.map(({ label, href, icon: Icon, external }) => (
                 <a
-                  className="group flex min-h-16 items-center justify-between gap-4 rounded-lg border border-white/10 bg-white/[0.04] px-5 py-4 text-portfolio-text transition hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
+                  className="group flex min-h-16 items-center justify-between gap-4 rounded-lg border border-white/10 bg-white/[0.04] px-5 py-4 text-portfolio-text transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
                   href={href}
                   key={label}
                   rel={external ? 'noreferrer' : undefined}

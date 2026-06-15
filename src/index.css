@@ -18,6 +18,7 @@
   font-family: var(--font-sans);
   background: #10072b;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -42,6 +43,10 @@ body {
   padding-block: 5rem;
 }
 
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
 .section-placeholder {
   min-height: 180px;
   border: 1px solid rgb(248 250 252 / 0.1);
@@ -49,4 +54,16 @@ body {
   background:
     linear-gradient(135deg, rgb(109 59 255 / 0.14), transparent 52%),
     #1b123a;
+}
+
+@media (min-width: 768px) {
+  .section-block {
+    padding-block: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-block {
+    padding-block: 7rem;
+  }
 }

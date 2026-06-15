@@ -33,19 +33,13 @@ export function Resume() {
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
-                className="inline-flex min-h-12 items-center justify-center rounded bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
+                className="inline-flex min-h-12 items-center justify-center rounded bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
                 download
                 href="/resume.pdf"
                 rel="noreferrer"
                 target="_blank"
               >
                 Baixar currículo
-              </a>
-              <a
-                className="inline-flex min-h-12 items-center justify-center rounded border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
-                href="#contato"
-              >
-                Ver LinkedIn
               </a>
             </div>
           </div>

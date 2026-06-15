@@ -7,7 +7,7 @@ export function Hero() {
     >
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-portfolio-lilac to-transparent" />
 
-      <div className="section-shell grid min-h-[calc(100vh-64px)] items-center gap-12 py-20 lg:grid-cols-[1.08fr_0.92fr] lg:py-24">
+      <div className="section-shell grid min-h-[calc(100svh-64px)] items-center gap-12 py-20 sm:py-24 lg:grid-cols-[1.08fr_0.92fr] lg:py-28">
         <div className="max-w-3xl">
           <p className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
             Desenvolvedora Front-end/Mobile | Produto Digital | IA Aplicada
@@ -30,19 +30,19 @@ export function Hero() {
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 items-center justify-center rounded bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition duration-200 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
               href="#projetos"
             >
               Ver projetos
             </a>
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 items-center justify-center rounded border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
               href="/resume.pdf"
             >
               Baixar currículo
             </a>
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded border border-white/15 px-6 text-sm font-bold text-portfolio-muted transition hover:border-portfolio-blue hover:text-portfolio-text focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 items-center justify-center rounded border border-white/15 px-6 text-sm font-bold text-portfolio-muted transition duration-200 hover:border-portfolio-blue hover:text-portfolio-text focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:ring-offset-2 focus:ring-offset-portfolio-bg"
               href="#contato"
             >
               Entrar em contato

@@ -24,10 +24,10 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <article
-              className="group flex h-full flex-col rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-purple/10"
+              className="group flex h-full flex-col rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-purple/10"
               key={project.title}
             >
               <div className="flex flex-wrap items-start justify-between gap-4">
@@ -46,7 +46,7 @@ export function Projects() {
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
                   <span
-                    className="rounded border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-portfolio-muted transition group-hover:border-portfolio-purple/35"
+                    className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-portfolio-muted transition duration-200 group-hover:border-portfolio-purple/35"
                     key={`${project.title}-${tag}`}
                   >
                     {tag}
