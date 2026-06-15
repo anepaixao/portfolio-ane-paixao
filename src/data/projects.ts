@@ -26,6 +26,20 @@ export const projects: Project[] = [
     status: 'Em desenvolvimento',
   },
   {
+    title: 'FinanceirAne',
+    description:
+      'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
+    tags: ['TypeScript', 'Produto Digital', 'IA Aplicada', 'Finanças', 'MVP'],
+    highlights: [
+      'Organização de contas e categorias financeiras',
+      'Planejamento de funcionalidades do agente',
+      'Foco em usabilidade e clareza das informações',
+      'Aplicação de produto digital a um problema real',
+      'Estruturação inicial de solução com IA aplicada',
+    ],
+    status: 'Em desenvolvimento',
+  },
+  {
     title: 'IA na Robótica Educacional',
     description:
       'Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.',
@@ -44,39 +58,5 @@ export const projects: Project[] = [
       'Aplicações de IA na educação',
     ],
     status: 'Pesquisa acadêmica',
-  },
-  {
-    title: 'Agente de IA para Clínica Odontológica',
-    description:
-      'Estudo e prototipação de uma solução baseada em IA para apoiar a reativação de pacientes e otimizar processos comerciais em clínicas odontológicas.',
-    tags: ['IA Aplicada', 'Automação', 'Discovery', 'CRM', 'WhatsApp', 'Produto'],
-    highlights: [
-      'Mapeamento de problema real',
-      'Análise de limitações técnicas',
-      'Recorte de MVP',
-      'Validação de dados e fluxos',
-      'Pensamento estratégico de produto',
-    ],
-    status: 'Prototipação',
-  },
-  {
-    title: 'Casaê Brasil',
-    description:
-      'Projeto de e-commerce no segmento de cama, mesa e banho, com foco em operação digital, identidade de marca, experiência de compra e estruturação comercial.',
-    tags: [
-      'E-commerce',
-      'Produto Digital',
-      'Branding',
-      'Operação Digital',
-      'Experiência do Usuário',
-    ],
-    highlights: [
-      'Criação de loja online',
-      'Definição de identidade visual',
-      'Organização de catálogo',
-      'Escrita de descrições de produto',
-      'Estratégia de operação digital',
-    ],
-    status: 'Projeto próprio',
   },
 ];

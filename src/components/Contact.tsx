@@ -1,9 +1,0 @@
-export function Contact() {
-  return (
-    <section aria-label="Contato" className="section-block" id="contato">
-      <div className="section-shell">
-        <div className="section-placeholder" />
-      </div>
-    </section>
-  );
-}

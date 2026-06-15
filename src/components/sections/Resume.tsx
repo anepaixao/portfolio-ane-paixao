@@ -25,8 +25,8 @@ export function Resume() {
                 Quer conhecer minha trajetória com mais detalhes?
               </p>
               <p className="mt-4 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-                Meu currículo reúne minha formação, projetos, experiências e
-                habilidades em desenvolvimento de software, produto digital e
+                Disponibilizo meu currículo principal com foco em
+                desenvolvimento de software, front-end/mobile, produto digital e
                 inteligência artificial aplicada.
               </p>
             </div>

@@ -11,7 +11,7 @@ export const experiences: Experience[] = [
   {
     role: 'Produto Digital e Desenvolvimento Mobile',
     organization: 'Blue Eggs',
-    period: '2025 — atual',
+    period: 'Out 2025 — atual',
     description:
       'Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.',
     highlights: [
@@ -26,7 +26,7 @@ export const experiences: Experience[] = [
   {
     role: 'Desenvolvimento de Software e Produto',
     organization: 'Projeto pessoal',
-    period: '2026 — atual',
+    period: 'Fev 2026 — atual',
     description:
       'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
     highlights: [
@@ -41,7 +41,7 @@ export const experiences: Experience[] = [
   {
     role: 'Pesquisadora',
     organization: 'UESC',
-    period: '2024 — atual',
+    period: 'Fev 2026 — atual',
     description:
       'Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.',
     highlights: [

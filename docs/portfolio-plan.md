@@ -184,7 +184,27 @@ Destaques:
 
 ---
 
-### 2. IA na Robótica Educacional
+### 2. FinanceirAne
+
+Descrição:
+
+Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.
+
+Tags:
+
+TypeScript, Produto Digital, IA Aplicada, Finanças, MVP
+
+Destaques:
+
+- Organização de contas e categorias financeiras;
+- Planejamento de funcionalidades do agente;
+- Foco em usabilidade e clareza das informações;
+- Aplicação de produto digital a um problema real;
+- Estruturação inicial de solução com IA aplicada.
+
+---
+
+### 3. IA na Robótica Educacional
 
 Descrição:
 
@@ -204,43 +224,10 @@ Destaques:
 
 ---
 
-### 3. Agente de IA para Clínica Odontológica
+## Projetos futuros / V2
 
-Descrição:
-
-Estudo e prototipação de uma solução baseada em IA para apoiar a reativação de pacientes e otimizar processos comerciais em clínicas odontológicas.
-
-Tags:
-
-IA Aplicada, Automação, Discovery, CRM, WhatsApp, Produto
-
-Destaques:
-
-- Mapeamento de problema real;
-- Análise de limitações técnicas;
-- Recorte de MVP;
-- Validação de dados e fluxos;
-- Pensamento estratégico de produto.
-
----
-
-### 4. Casaê Brasil
-
-Descrição:
-
-Projeto de e-commerce no segmento de cama, mesa e banho, com foco em operação digital, identidade de marca, experiência de compra e estruturação comercial.
-
-Tags:
-
-E-commerce, Produto Digital, Branding, Operação Digital, Experiência do Usuário
-
-Destaques:
-
-- Criação de loja online;
-- Definição de identidade visual;
-- Organização de catálogo;
-- Escrita de descrições de produto;
-- Estratégia de operação digital.
+- Agente de IA para Clínica Odontológica;
+- Casaê Brasil.
 
 ---
 
@@ -250,19 +237,23 @@ Destaques:
 
 Mostrar experiências relevantes além de empregos formais.
 
-## Experiências sugeridas
+## Experiências sugeridas para V1
 
-### Blue Eggs — Cofundadora / Produto e Tecnologia
+### Macuco Entregas — Produto Digital e Desenvolvimento Mobile
 
-Atuação na criação e organização de soluções digitais, com foco em desenvolvimento de produto, liderança de equipe, estruturação de MVPs e comunicação entre áreas técnica e estratégica.
+Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.
 
-### Iniciação Científica — Pesquisadora
+### FinanceirAne — Desenvolvimento de Software e Produto
+
+Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.
+
+### IA na Robótica Educacional — Pesquisadora
 
 Pesquisa sobre inteligência artificial aplicada à robótica educacional, com foco em educação STEM, análise de ferramentas, revisão bibliográfica e produção técnica.
 
-### Projetos independentes de tecnologia e produto
+### Projetos de Produto, IA e Desenvolvimento
 
-Desenvolvimento e estruturação de projetos digitais envolvendo aplicativos, automação, e-commerce, discovery e validação de problemas reais.
+Eixo geral que conecta os projetos da V1 a desenvolvimento de software, produto digital, pesquisa e soluções com impacto real.
 
 ---
 
@@ -287,16 +278,19 @@ Organizar habilidades de forma clara, sem parecer exagerada.
 
 ### Desenvolvimento de Software
 
+- JavaScript
+- TypeScript
 - Python
-- C
 - Node.js
+- C
 - APIs REST
-- Organização de projetos
 - Lógica de programação
+- Organização de projetos
 
 ### Produto Digital
 
-- Discovery
+- Entendimento de problemas
+- Discovery inicial
 - MVP
 - User stories
 - Priorização
@@ -335,6 +329,8 @@ Facilitar o acesso ao currículo em PDF.
 Texto:
 
 Quer conhecer minha trajetória com mais detalhes?
+
+Disponibilizo meu currículo principal com foco em desenvolvimento de software, front-end/mobile, produto digital e inteligência artificial aplicada.
 
 Botão:
 
@@ -395,46 +391,33 @@ Entrar em contato
 # 14. Estrutura de pastas
 
 src/
-
-components/
-
-Header.tsx
-
-Hero.tsx
-
-About.tsx
-
-Projects.tsx
-
-Experience.tsx
-
-Skills.tsx
-
-Resume.tsx
-
-Contact.tsx
-
-Footer.tsx
-
-data/
-
-projects.ts
-
-skills.ts
-
-experiences.ts
-
-assets/
-
-images/
-
-resume/
-
-App.tsx
-
-main.tsx
-
-index.css
+  assets/
+    images/
+    resume/
+  components/
+    layout/
+      Header.tsx
+      Footer.tsx
+    sections/
+      Hero.tsx
+      About.tsx
+      Projects.tsx
+      Experience.tsx
+      Skills.tsx
+      Resume.tsx
+      Contact.tsx
+    ui/
+      Button.tsx
+      SectionTitle.tsx
+      ProjectCard.tsx
+      SkillCard.tsx
+  data/
+    projects.ts
+    skills.ts
+    experiences.ts
+  App.tsx
+  main.tsx
+  index.css
 
 ---
 
@@ -478,7 +461,7 @@ index.css
 ## Etapa 6 — Experiências
 
 - Criar linha do tempo ou cards;
-- Adicionar Blue Eggs, Iniciação Científica e projetos independentes.
+- Adicionar Macuco Entregas, FinanceirAne e IA na Robótica Educacional.
 
 ## Etapa 7 — Habilidades
 

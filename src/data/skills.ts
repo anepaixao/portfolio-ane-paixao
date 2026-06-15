@@ -16,14 +16,14 @@ export const skills: SkillCategory[] = [
     description:
       'Base em lógica, estruturação de projetos, programação e construção de soluções digitais com boas práticas.',
     skills: [
+      'JavaScript',
+      'TypeScript',
       'Python',
-      'C',
       'Node.js',
+      'C',
       'APIs REST',
       'Lógica de programação',
       'Organização de projetos',
-      'Git',
-      'GitHub',
     ],
   },
   {
@@ -31,7 +31,8 @@ export const skills: SkillCategory[] = [
     description:
       'Atuação na organização de MVPs, entendimento de problemas reais, priorização e construção de soluções com foco no usuário.',
     skills: [
-      'Discovery',
+      'Entendimento de problemas',
+      'Discovery inicial',
       'MVP',
       'User stories',
       'Priorização',
