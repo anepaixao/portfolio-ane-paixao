@@ -29,7 +29,7 @@ export function Contact() {
       id="contato"
     >
       <div className="section-shell">
-        <div className="relative overflow-hidden rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-2xl shadow-black/20 sm:p-8 lg:p-10">
+        <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-portfolio-card p-6 shadow-2xl shadow-black/20 sm:p-8 lg:p-10">
           <div className="absolute -right-10 top-10 h-40 w-40 rounded-full bg-portfolio-blue/20 blur-3xl" />
           <div className="absolute -left-10 bottom-0 h-44 w-44 rounded-full bg-portfolio-purple/20 blur-3xl" />
 
@@ -54,14 +54,14 @@ export function Contact() {
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
               {contactLinks.map(({ label, href, icon: Icon, external }) => (
                 <a
-                  className="group flex min-h-16 items-center justify-between gap-4 rounded-lg border border-white/10 bg-white/[0.04] px-5 py-4 text-portfolio-text transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:bg-white/[0.07] focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
+                  className="group flex min-h-16 items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-portfolio-text transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:bg-white/[0.07] hover:shadow-lg hover:shadow-portfolio-purple/10 focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
                   href={href}
                   key={label}
                   rel={external ? 'noreferrer' : undefined}
                   target={external ? '_blank' : undefined}
                 >
                   <span className="flex items-center gap-3 font-bold">
-                    <span className="grid size-10 shrink-0 place-items-center rounded bg-gradient-to-r from-portfolio-purple to-portfolio-blue text-white">
+                    <span className="grid size-10 shrink-0 place-items-center rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue text-white">
                       <Icon size={20} />
                     </span>
                     {label}

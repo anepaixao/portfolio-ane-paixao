@@ -36,7 +36,7 @@ export function Experience() {
                 <span className="relative z-10 mt-3 size-3 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue shadow-lg shadow-portfolio-purple/40" />
               </div>
 
-              <div className="rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 sm:p-7">
+              <div className="rounded-3xl border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-portfolio-blue/10 sm:p-7">
                 <div className="flex flex-wrap items-start justify-between gap-4">
                   <div>
                     <p className="text-sm font-semibold text-portfolio-lilac">

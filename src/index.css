@@ -41,6 +41,7 @@ body {
   min-height: 420px;
   border-bottom: 1px solid rgb(248 250 252 / 0.1);
   padding-block: 5rem;
+  position: relative;
 }
 
 section[id] {
@@ -50,7 +51,7 @@ section[id] {
 .section-placeholder {
   min-height: 180px;
   border: 1px solid rgb(248 250 252 / 0.1);
-  border-radius: 0.5rem;
+  border-radius: 1.5rem;
   background:
     linear-gradient(135deg, rgb(109 59 255 / 0.14), transparent 52%),
     #1b123a;

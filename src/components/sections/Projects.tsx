@@ -27,7 +27,7 @@ export function Projects() {
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <article
-              className="group flex h-full flex-col rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-purple/10"
+              className="group flex h-full flex-col rounded-3xl border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-purple/10"
               key={project.title}
             >
               <div className="flex flex-wrap items-start justify-between gap-4">

@@ -27,7 +27,7 @@ export function Skills() {
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {skills.map((group) => (
             <article
-              className="flex h-full flex-col rounded-lg border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-blue/10"
+              className="flex h-full flex-col rounded-3xl border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-portfolio-blue/10"
               key={group.category}
             >
               <div className="mb-5 h-1 w-14 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />

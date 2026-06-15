@@ -27,7 +27,7 @@ export function About() {
         </div>
 
         <div>
-          <div className="rounded-lg border border-white/10 bg-portfolio-card/75 p-6 shadow-xl shadow-black/10 sm:p-8">
+          <div className="rounded-3xl border border-white/10 bg-portfolio-card/75 p-6 shadow-xl shadow-black/10 sm:p-8">
             <div className="space-y-5 text-base leading-8 text-portfolio-muted sm:text-lg">
               <p>
                 Sou estudante de Ciência da Computação na UESC e desenvolvedora
@@ -52,7 +52,7 @@ export function About() {
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {highlights.map((highlight) => (
               <article
-                className="rounded-lg border border-white/10 bg-portfolio-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60"
+                className="rounded-3xl border border-white/10 bg-portfolio-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-portfolio-purple/10"
                 key={highlight}
               >
                 <div className="mb-5 size-2 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />

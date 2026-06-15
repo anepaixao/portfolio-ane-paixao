@@ -47,7 +47,7 @@ export function Footer() {
           {footerLinks.map(({ label, href, icon: Icon, external }) => (
             <a
               aria-label={label}
-            className="grid size-11 place-items-center rounded border border-white/10 bg-white/[0.04] text-portfolio-muted transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:text-portfolio-lilac"
+            className="grid size-11 place-items-center rounded-full border border-white/10 bg-white/[0.04] text-portfolio-muted transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:text-portfolio-lilac hover:shadow-lg hover:shadow-portfolio-purple/10"
               href={href}
               key={label}
               rel={external ? 'noreferrer' : undefined}

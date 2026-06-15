@@ -27,7 +27,7 @@ export function Header() {
         <div className="hidden items-center gap-5 lg:flex">
           {navItems.map((item) => (
             <a
-            className="rounded px-2 py-1 text-sm font-medium text-portfolio-muted transition duration-200 hover:bg-white/[0.04] hover:text-portfolio-lilac"
+              className="rounded-full px-3 py-1.5 text-sm font-medium text-portfolio-muted transition duration-200 hover:bg-white/[0.05] hover:text-portfolio-lilac"
               href={item.href}
               key={item.href}
             >
@@ -39,7 +39,7 @@ export function Header() {
         <button
           aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
           aria-expanded={isOpen}
-          className="grid size-10 place-items-center rounded border border-white/10 text-portfolio-text transition duration-200 hover:border-portfolio-lilac/60 lg:hidden"
+          className="grid size-10 place-items-center rounded-full border border-white/10 text-portfolio-text transition duration-200 hover:border-portfolio-lilac/60 lg:hidden"
           onClick={() => setIsOpen((current) => !current)}
           type="button"
         >
@@ -52,7 +52,7 @@ export function Header() {
           <div className="section-shell grid gap-1 py-3">
             {navItems.map((item) => (
               <a
-                className="rounded px-3 py-3 text-sm font-medium text-portfolio-muted transition duration-200 hover:bg-white/[0.04] hover:text-portfolio-lilac"
+                className="rounded-2xl px-3 py-3 text-sm font-medium text-portfolio-muted transition duration-200 hover:bg-white/[0.05] hover:text-portfolio-lilac"
                 href={item.href}
                 key={item.href}
                 onClick={() => setIsOpen(false)}
