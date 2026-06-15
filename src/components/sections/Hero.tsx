@@ -43,7 +43,7 @@ export function Hero() {
             </a>
             <a
               className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
-              href="/resume.pdf"
+              href="#curriculo"
             >
               Baixar currículo
             </a>
@@ -56,7 +56,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[19rem] sm:max-w-sm lg:ml-auto lg:max-w-md">
+        <div className="relative mx-auto w-full max-w-[19rem] sm:max-w-sm lg:ml-auto lg:max-w-[22rem] xl:max-w-sm">
           <div className="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-portfolio-purple/35 via-portfolio-blue/25 to-portfolio-lilac/20 blur-2xl" />
           <div className="absolute -right-4 top-8 size-24 rounded-full border border-portfolio-blue/25 bg-portfolio-blue/10 blur-sm" />
           <div className="absolute -bottom-5 -left-5 size-28 rounded-full border border-portfolio-lilac/25 bg-portfolio-purple/10 blur-sm" />
