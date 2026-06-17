@@ -1,8 +1,8 @@
-# Planejamento do Portfolio Profissional - Ane
+# Planejamento do Portfolio Profissional - Ane Paixão
 
 ## 1. Objetivo do site
 
-Criar um portfolio profissional, moderno e recrutador-friendly para apresentar a trajetoria, projetos, habilidades e posicionamento profissional de Ane como desenvolvedora em formacao, com foco em desenvolvimento front-end/mobile, produto digital e IA aplicada.
+Criar um portfolio profissional, moderno e recrutador-friendly para apresentar a trajetoria, projetos, habilidades e posicionamento profissional de Ane Paixão como desenvolvedora em formacao, com foco em desenvolvimento de software, front-end/mobile, produto digital e IA aplicada.
 
 O site deve funcionar como uma extensao visual do LinkedIn, curriculo e GitHub, mantendo uma identidade consistente, tecnologica e profissional.
 
@@ -16,11 +16,11 @@ Construindo produtos digitais com tecnologia, proposito e visao de usuario.
 
 ### Titulo profissional
 
-Desenvolvedora Front-end/Mobile | Produto Digital | IA Aplicada
+Desenvolvedora de Software | Produto Digital | IA Aplicada
 
 ### Descricao curta
 
-Estudante de Ciencia da Computacao, desenvolvedora em formacao e criadora de solucoes digitais com foco em experiencia do usuario, tecnologia aplicada e resolucao de problemas reais.
+Estudante de Ciencia da Computacao, desenvolvedora de software em formacao e criadora de solucoes digitais com foco em experiencia do usuario, tecnologia aplicada e resolucao de problemas reais.
 
 ---
 
@@ -98,17 +98,17 @@ O portfolio sera uma landing page de pagina unica, com navegacao por secoes.
 
 ### Objetivo
 
-Apresentar imediatamente quem e Ane, qual seu posicionamento profissional e quais acoes o visitante pode tomar.
+Apresentar imediatamente quem e Ane Paixão, qual seu posicionamento profissional e quais acoes o visitante pode tomar.
 
 ### Conteudo
 
 Titulo:
 
-Ola, eu sou Ane.
+Ola, eu sou Ane Paixão.
 
 Subtitulo:
 
-Desenvolvedora Front-end/Mobile em formacao, estudante de Ciencia da Computacao e criadora de produtos digitais com foco em tecnologia, experiencia do usuario e IA aplicada.
+Desenvolvedora de Software | Produto Digital | IA Aplicada
 
 Frase de impacto:
 
@@ -134,7 +134,7 @@ Construindo produtos digitais com tecnologia, proposito e visao de usuario.
 
 ### Objetivo
 
-Explicar quem e Ane de forma humana, profissional e estrategica.
+Explicar quem e Ane Paixão de forma humana, profissional e estrategica.
 
 ### Conteudo sugerido
 
@@ -180,7 +180,7 @@ Destaques:
 
 ---
 
-### Projeto 2 - Financeirane
+### Projeto 2 - FinanceirAne
 
 Descricao:
 
@@ -337,6 +337,10 @@ Permitir contato rapido e profissional.
 - GitHub;
 - E-mail.
 
+E-mail profissional:
+
+anepaixao50@gmail.com
+
 Texto sugerido:
 
 Estou aberta a oportunidades de estagio, projetos colaborativos e conexoes na area de tecnologia, produto digital e inteligencia artificial aplicada.
@@ -374,33 +378,17 @@ Entrar em contato
 
 ```txt
 src/
-assets/
-images/
-resume/
-components/
-layout/
-Header.tsx
-Footer.tsx
-sections/
-Hero.tsx
-About.tsx
-Projects.tsx
-Experience.tsx
-Skills.tsx
-Resume.tsx
-Contact.tsx
-ui/
-Button.tsx
-SectionTitle.tsx
-ProjectCard.tsx
-SkillCard.tsx
-data/
-projects.ts
-skills.ts
-experiences.ts
-App.tsx
-main.tsx
-index.css
+  assets/
+    images/
+    resume/
+  components/
+    layout/
+    sections/
+    ui/
+  data/
+  App.tsx
+  main.tsx
+  index.css
 ```
 
 ---

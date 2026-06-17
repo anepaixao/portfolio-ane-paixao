@@ -1,4 +1,4 @@
-import { Code2, ExternalLink, Mail } from 'lucide-react';
+import { Code2, ExternalLink, Mail, Sparkles } from 'lucide-react';
 
 const footerLinks = [
   {
@@ -29,17 +29,20 @@ export function Footer() {
       <div className="section-shell flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
           <a
-            className="text-base font-black uppercase tracking-[0.18em] text-portfolio-text transition hover:text-portfolio-lilac"
+            className="inline-flex items-center gap-2 text-base font-black uppercase tracking-[0.18em] text-portfolio-text transition hover:text-portfolio-lilac"
             href="#inicio"
           >
-            Ane
+            <span className="grid size-6 place-items-center rounded-full border border-white/10 bg-white/[0.04] text-portfolio-lilac">
+              <Sparkles size={13} />
+            </span>
+            Ane Paixão
           </a>
           <p className="mt-3 max-w-xl text-sm leading-6 text-portfolio-muted">
             Construindo produtos digitais com tecnologia, propósito e visão de
             usuário.
           </p>
           <p className="mt-4 text-xs text-portfolio-muted/80">
-            © {currentYear} Ane. Todos os direitos reservados.
+            © {currentYear} Ane Paixão. Todos os direitos reservados.
           </p>
         </div>
 

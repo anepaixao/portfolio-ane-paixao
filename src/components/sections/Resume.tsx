@@ -1,3 +1,5 @@
+import { FileText } from 'lucide-react';
+
 export function Resume() {
   return (
     <section
@@ -13,22 +15,42 @@ export function Resume() {
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
-                Currículo
+                <span className="inline-flex items-center gap-2">
+                  <span className="grid size-7 place-items-center rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10">
+                    <FileText size={15} />
+                  </span>
+                  Currículo
+                </span>
               </p>
               <h2
                 className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
                 id="resume-title"
               >
-                Currículo
+                 Quer conhecer minha trajetória com mais detalhes?
               </h2>
               <p className="mt-5 text-xl font-semibold leading-snug text-portfolio-text sm:text-2xl">
-                Quer conhecer minha trajetória com mais detalhes?
+                
               </p>
               <p className="mt-4 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
                 Disponibilizo meu currículo principal com foco em
                 desenvolvimento de software, front-end/mobile, produto digital e
                 inteligência artificial aplicada.
               </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'Desenvolvimento de software',
+                  'Front-end/mobile',
+                  'Produto digital',
+                  'IA aplicada',
+                ].map((item) => (
+                  <span
+                    className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm font-semibold text-portfolio-muted"
+                    key={item}
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">

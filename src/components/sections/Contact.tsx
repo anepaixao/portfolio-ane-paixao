@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Code2, ExternalLink, Mail } from 'lucide-react';
 
 const contactLinks = [
@@ -36,29 +37,36 @@ export function Contact() {
           <div className="relative grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
-                Contato
+                <span className="inline-flex items-center gap-2">
+                  <span className="grid size-7 place-items-center rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10">
+                    <Mail size={15} />
+                  </span>
+                  Contato
+                </span>
               </p>
               <h2
                 className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
                 id="contact-title"
               >
-                Contato
+                Vamos construir algo juntos?
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-                Estou aberta a oportunidades de estágio, projetos colaborativos
-                e conexões na área de tecnologia, produto digital e inteligência
-                artificial aplicada.
+               Entre em contato para transformar suas ideias em realidade. Estou disponível para discutir projetos, oportunidades de colaboração ou qualquer outra coisa que você tenha em mente.
               </p>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
-              {contactLinks.map(({ label, href, icon: Icon, external }) => (
-                <a
+              {contactLinks.map(({ label, href, icon: Icon, external }, index) => (
+                <motion.a
                   className="group flex min-h-16 items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-portfolio-text transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:bg-white/[0.07] hover:shadow-lg hover:shadow-portfolio-purple/10 focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
                   href={href}
+                  initial={{ opacity: 0, y: 16 }}
                   key={label}
                   rel={external ? 'noreferrer' : undefined}
                   target={external ? '_blank' : undefined}
+                  transition={{ delay: index * 0.06, duration: 0.4 }}
+                  viewport={{ once: true, amount: 0.4 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                 >
                   <span className="flex items-center gap-3 font-bold">
                     <span className="grid size-10 shrink-0 place-items-center rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue text-white">
@@ -70,7 +78,7 @@ export function Contact() {
                     className="text-portfolio-lilac opacity-80 transition group-hover:translate-x-0.5 group-hover:opacity-100"
                     size={18}
                   />
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>

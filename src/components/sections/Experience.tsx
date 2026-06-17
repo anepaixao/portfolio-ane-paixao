@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+import { BriefcaseBusiness, Rocket } from 'lucide-react';
 import { experiences } from '../../data/experiences';
 
 export function Experience() {
@@ -10,30 +12,38 @@ export function Experience() {
       <div className="section-shell">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
-            Experiências
+            <span className="inline-flex items-center gap-2">
+              <span className="grid size-7 place-items-center rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10">
+                <BriefcaseBusiness size={15} />
+              </span>
+              Experiências
+            </span>
           </p>
           <h2
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="experiences-title"
           >
-            Experiências
+            Minha Trajetória 
           </h2>
-          <p className="mt-5 text-base leading-8 text-portfolio-muted sm:text-lg">
-            Projetos e experiências que conectam desenvolvimento de software,
-            produto digital, pesquisa e soluções com impacto real.
-          </p>
+          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
         </div>
 
         <div className="mt-12 space-y-6 lg:relative lg:space-y-0">
           <div className="hidden lg:absolute lg:left-6 lg:top-3 lg:block lg:h-[calc(100%-1.5rem)] lg:w-px lg:bg-gradient-to-b lg:from-portfolio-purple lg:via-portfolio-blue lg:to-transparent" />
 
-          {experiences.map((experience) => (
-            <article
+          {experiences.map((experience, index) => (
+            <motion.article
               className="relative lg:grid lg:grid-cols-[3rem_1fr] lg:gap-6 lg:pb-8"
+              initial={{ opacity: 0, y: 22 }}
               key={`${experience.organization}-${experience.role}`}
+              transition={{ delay: index * 0.08, duration: 0.45 }}
+              viewport={{ once: true, amount: 0.25 }}
+              whileInView={{ opacity: 1, y: 0 }}
             >
               <div className="hidden lg:flex lg:justify-center">
-                <span className="relative z-10 mt-3 size-3 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue shadow-lg shadow-portfolio-purple/40" />
+                <span className="relative z-10 mt-3 grid size-8 place-items-center rounded-full border border-white/10 bg-gradient-to-r from-portfolio-purple to-portfolio-blue text-white shadow-lg shadow-portfolio-purple/40">
+                  <Rocket size={14} />
+                </span>
               </div>
 
               <div className="rounded-3xl border border-white/10 bg-portfolio-card p-6 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-portfolio-blue/10 sm:p-7">
@@ -78,7 +88,7 @@ export function Experience() {
                   </ul>
                 </div>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
       </div>

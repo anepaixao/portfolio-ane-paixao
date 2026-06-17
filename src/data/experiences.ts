@@ -9,7 +9,7 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Produto Digital e Desenvolvimento Mobile',
+    role: 'Cofundadora, Produto e Front-end/Mobile',
     organization: 'Blue Eggs',
     period: 'Out 2025 — atual',
     description:
@@ -24,8 +24,8 @@ export const experiences: Experience[] = [
     type: 'Produto & Mobile',
   },
   {
-    role: 'Desenvolvimento de Software e Produto',
-    organization: 'Projeto pessoal',
+    role: 'Projetos de Produto, IA e Desenvolvimento',
+organization: 'Projetos independentes',
     period: 'Fev 2026 — atual',
     description:
       'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
