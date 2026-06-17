@@ -9,44 +9,47 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Cofundadora, Produto e Desenvolvimento Mobile',
+    role: 'Cofundadora, Produto e Front-end/Mobile',
     organization: 'Blue Eggs',
     period: 'Out 2025 — atual',
     description:
-      'Atuação na liderança da Blue Eggs e na construção do Macuco Entregas, conectando definição de escopo, regras de negócio, experiência do usuário e desenvolvimento front-end/mobile.',
+      'Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.',
     highlights: [
-      'Organização do escopo do MVP',
-      'Documentação de regras de negócio',
+      'Estruturação do produto e escopo do MVP',
+      'Organização de regras de negócio',
       'Desenvolvimento mobile com React Native e Expo',
-      'Alinhamento entre equipe, produto e usuário',
+      'Comunicação com equipe técnica',
+      'Foco em experiência do usuário e comércio local',
     ],
-    type: 'Produto, Liderança & Mobile',
+    type: 'Produto & Mobile',
   },
   {
     role: 'Projetos de Produto, IA e Desenvolvimento',
-    organization: 'Projetos próprios',
-    period: '2024 — atual',
+organization: 'Projetos independentes',
+    period: 'Fev 2026 — atual',
     description:
-      'Estruturação de projetos digitais próprios, conectando tecnologia, automação, dados e produto para resolver problemas práticos do dia a dia.',
+      'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
     highlights: [
+      'Organização de contas e categorias financeiras',
       'Planejamento de funcionalidades do agente',
-      'Organização de dados e fluxos',
-      'IA aplicada a problemas reais',
-      'Documentação e evolução contínua',
+      'Foco em usabilidade e clareza das informações',
+      'Aplicação de produto digital a um problema real',
+      'Estruturação inicial de solução com IA aplicada',
     ],
-    type: 'Produto, IA & Software',
+    type: 'Software & IA Aplicada',
   },
   {
-    role: 'Pesquisadora em IA Aplicada',
+    role: 'Pesquisadora',
     organization: 'UESC',
-    period: '2024 — atual',
+    period: 'Fev 2026 — atual',
     description:
-      'Pesquisa sobre inteligência artificial aplicada à robótica educacional e educação STEM, com foco em análise de ferramentas, revisão bibliográfica e produção técnica.',
+      'Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.',
     highlights: [
       'Pesquisa em IA aplicada',
       'Análise comparativa de ferramentas',
       'Revisão bibliográfica',
       'Escrita e comunicação técnica',
+      'Investigação sobre educação STEM',
     ],
     type: 'Pesquisa Acadêmica',
   },

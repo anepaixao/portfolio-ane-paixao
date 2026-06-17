@@ -31,12 +31,9 @@ export function Skills() {
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="skills-title"
           >
-            Habilidades
+            Minhas competências 
           </h2>
-          <p className="mt-5 text-base leading-8 text-portfolio-muted sm:text-lg">
-            Habilidades organizadas por áreas de atuação para mostrar com
-            clareza minha base técnica, visão de produto e interesse em IA.
-          </p>
+          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
         </div>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

@@ -1,38 +1,4 @@
 import { motion } from 'framer-motion';
-import { BrainCircuit, Boxes, Layers, Search, Smartphone } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
-
-const heroNodes: Array<{
-  Icon: LucideIcon;
-  className: string;
-  sizeClass: string;
-}> = [
-  {
-    Icon: Layers,
-    className: 'left-0 top-8 sm:left-4',
-    sizeClass: 'size-11',
-  },
-  {
-    Icon: Boxes,
-    className: 'right-2 top-0 sm:right-10 sm:top-8',
-    sizeClass: 'size-10',
-  },
-  {
-    Icon: BrainCircuit,
-    className: 'right-0 top-1/2 -translate-y-1/2 sm:right-2',
-    sizeClass: 'size-12',
-  },
-  {
-    Icon: Smartphone,
-    className: 'left-4 bottom-12 sm:left-10',
-    sizeClass: 'size-10',
-  },
-  {
-    Icon: Search,
-    className: 'right-10 bottom-0 sm:right-16',
-    sizeClass: 'size-9',
-  },
-];
 
 export function Hero() {
   return (
@@ -49,23 +15,17 @@ export function Hero() {
 
       <div className="section-shell grid min-h-[calc(100svh-64px)] items-center gap-14 py-20 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:py-28">
         <div className="max-w-3xl">
-          <p className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
+          <p className="inline-flex max-w-full whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-portfolio-lilac sm:px-4 sm:text-xs">
             Desenvolvedora de Software | Produto Digital | IA Aplicada
           </p>
 
-          <h1 className="mt-7 text-4xl font-black leading-tight text-portfolio-text sm:text-5xl lg:text-7xl">
+          <h4 className="mt-7 text-4xl font-black leading-tight text-portfolio-text sm:text-[2.85rem] lg:text-[4.5rem]">
             Olá, eu sou Ane Paixão.
-          </h1>
+          </h4>
 
-          <p className="mt-6 max-w-2xl text-2xl font-semibold leading-snug text-portfolio-text sm:text-3xl">
+          <p className="mt-10 max-w-2xl text-xl font-medium leading-snug text-portfolio-text sm:text-[1.7rem]">
             Construindo produtos digitais com tecnologia, propósito e visão de
             usuário.
-          </p>
-
-          <p className="mt-6 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-            Estudante de Ciência da Computação e desenvolvedora de software em
-            formação, com experiência prática em projetos digitais, produto, IA
-            aplicada e resolução de problemas reais.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -96,147 +56,243 @@ export function Hero() {
           initial={{ opacity: 0, y: 18 }}
           transition={{ duration: 0.75, ease: 'easeOut' }}
         >
-          <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-portfolio-purple/20 via-portfolio-blue/10 to-portfolio-lilac/15 blur-3xl" />
-          <div className="absolute left-1/2 top-1/2 size-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-portfolio-lilac/15 bg-portfolio-lilac/10 blur-2xl" />
-          <div className="absolute inset-x-10 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-portfolio-purple/18 via-portfolio-blue/10 to-portfolio-lilac/15 blur-3xl" />
+          <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-portfolio-lilac/10 blur-3xl" />
+          <div className="absolute right-8 top-8 h-24 w-24 rounded-full bg-portfolio-blue/12 blur-2xl" />
+          <div className="absolute left-10 bottom-10 h-28 w-28 rounded-full bg-portfolio-purple/12 blur-2xl" />
 
-          <div className="relative h-[24rem] overflow-hidden rounded-[2.4rem] border border-white/10 bg-portfolio-card/80 p-6 shadow-2xl shadow-portfolio-purple/15 backdrop-blur-xl sm:h-[27rem] sm:p-7">
-            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-portfolio-lilac/70 to-transparent" />
-            <div className="absolute right-7 top-7 flex gap-1.5">
-              <span className="size-1.5 rounded-full bg-portfolio-lilac/60" />
-              <span className="size-1.5 rounded-full bg-portfolio-blue/60" />
-              <span className="size-1.5 rounded-full bg-white/60" />
-            </div>
-
+          <div className="relative h-[25rem] [perspective:1400px] sm:h-[29rem]">
             <svg
               aria-hidden="true"
-              className="absolute inset-0 h-full w-full text-portfolio-lilac/22"
-              viewBox="0 0 520 420"
+              className="pointer-events-none absolute inset-0 h-full w-full text-portfolio-lilac/18"
+              viewBox="0 0 620 500"
             >
-              <circle cx="260" cy="210" fill="none" r="124" stroke="currentColor" strokeOpacity="0.18" strokeWidth="1" />
-              <circle cx="260" cy="210" fill="none" r="86" stroke="currentColor" strokeOpacity="0.14" strokeWidth="1" />
               <path
-                d="M260 210L112 100"
+                d="M160 160C214 132 292 132 362 174"
                 fill="none"
                 stroke="currentColor"
-                strokeDasharray="6 10"
+                strokeDasharray="6 12"
                 strokeLinecap="round"
                 strokeWidth="1.2"
               />
               <path
-                d="M260 210L402 112"
+                d="M192 320C256 288 350 288 430 330"
                 fill="none"
                 stroke="currentColor"
-                strokeDasharray="6 10"
+                strokeDasharray="6 12"
                 strokeLinecap="round"
                 strokeWidth="1.2"
               />
               <path
-                d="M260 210L430 210"
+                d="M180 218C212 198 258 196 300 206"
                 fill="none"
                 stroke="currentColor"
-                strokeDasharray="6 10"
-                strokeLinecap="round"
-                strokeWidth="1.2"
-              />
-              <path
-                d="M260 210L140 326"
-                fill="none"
-                stroke="currentColor"
-                strokeDasharray="6 10"
-                strokeLinecap="round"
-                strokeWidth="1.2"
-              />
-              <path
-                d="M260 210L376 330"
-                fill="none"
-                stroke="currentColor"
-                strokeDasharray="6 10"
-                strokeLinecap="round"
-                strokeWidth="1.2"
-              />
-              <path
-                d="M122 148C164 126 202 144 238 172"
-                fill="none"
-                stroke="currentColor"
-                strokeDasharray="5 11"
-                strokeLinecap="round"
-                strokeOpacity="0.24"
+                strokeOpacity="0.28"
                 strokeWidth="1"
               />
               <path
-                d="M286 250C318 278 344 294 372 302"
+                d="M356 222C408 206 456 214 494 244"
                 fill="none"
                 stroke="currentColor"
-                strokeDasharray="5 11"
-                strokeLinecap="round"
-                strokeOpacity="0.24"
-                strokeWidth="1"
-              />
-              <path
-                d="M310 166C344 156 374 170 404 196"
-                fill="none"
-                stroke="currentColor"
-                strokeDasharray="5 11"
-                strokeLinecap="round"
                 strokeOpacity="0.24"
                 strokeWidth="1"
               />
             </svg>
 
             <motion.div
-              animate={{ scale: [1, 1.03, 1], opacity: [0.88, 1, 0.88] }}
-              className="absolute left-1/2 top-1/2 z-10 flex size-36 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-gradient-to-br from-portfolio-purple/30 via-portfolio-blue/18 to-portfolio-lilac/30 p-[1px] shadow-[0_0_60px_rgba(109,59,255,0.22)]"
-              transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
+              animate={{ y: [0, -10, 0], rotate: [-3, -1.5, -3] }}
+              className="absolute left-1/2 top-[6%] z-30 h-[21.5rem] w-[11.25rem] -translate-x-1/2 sm:h-[25rem] sm:w-[13rem] lg:top-[4%]"
+              transition={{ duration: 6.6, repeat: Infinity, ease: 'easeInOut' }}
             >
-              <div className="relative flex size-full items-center justify-center rounded-full bg-portfolio-card/90 backdrop-blur">
-                <div className="absolute inset-4 rounded-full border border-white/10" />
-                <div className="absolute inset-9 rounded-full border border-portfolio-lilac/15" />
-                <div className="relative size-16 rounded-[1.6rem] border border-white/12 bg-gradient-to-br from-portfolio-purple/18 via-transparent to-portfolio-blue/18">
-                  <div className="absolute inset-3 rounded-xl border border-white/10" />
-                  <div className="absolute left-1/2 top-1/2 size-2.5 -translate-x-1/2 -translate-y-1/2 rounded-full bg-portfolio-lilac shadow-[0_0_18px_rgba(167,139,250,0.8)]" />
+              <div className="relative h-full w-full rounded-[2.35rem] border border-white/16 bg-[#120c26]/85 p-2 shadow-[0_30px_70px_rgba(6,4,18,0.55)] backdrop-blur-2xl">
+                <div className="absolute inset-x-0 top-0 h-24 rounded-t-[2.35rem] bg-gradient-to-b from-white/10 to-transparent" />
+                <div className="absolute left-1/2 top-3 h-1.5 w-14 -translate-x-1/2 rounded-full bg-white/12" />
+                <div className="relative h-full overflow-hidden rounded-[1.95rem] border border-white/10 bg-[linear-gradient(180deg,rgba(109,59,255,0.2),rgba(16,7,43,0.96)_26%,rgba(16,7,43,0.98)_100%)] px-3 py-4">
+                  <div className="absolute right-3 top-3 h-16 w-16 rounded-full bg-portfolio-blue/16 blur-2xl" />
+                  <div className="absolute left-2 top-10 h-20 w-20 rounded-full bg-portfolio-purple/14 blur-2xl" />
+
+                  <div className="relative flex items-center justify-between">
+                    <div className="space-y-1">
+                      <div className="h-2 w-10 rounded-full bg-white/20" />
+                      <div className="h-2 w-16 rounded-full bg-white/10" />
+                    </div>
+                    <div className="flex gap-1.5">
+                      <span className="h-2.5 w-2.5 rounded-full bg-portfolio-lilac/80" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-white/30" />
+                    </div>
+                  </div>
+
+                  <div className="relative mt-4 overflow-hidden rounded-[1.45rem] border border-white/10 bg-gradient-to-br from-portfolio-purple/28 via-portfolio-blue/14 to-white/6 p-3">
+                    <div className="grid grid-cols-[1.1fr_0.9fr] gap-2">
+                      <div className="space-y-2">
+                        <div className="h-2 w-14 rounded-full bg-white/25" />
+                        <div className="h-2 w-10 rounded-full bg-white/12" />
+                        <div className="mt-3 grid grid-cols-3 gap-1.5">
+                          <span className="h-8 rounded-xl bg-white/12" />
+                          <span className="h-8 rounded-xl bg-white/8" />
+                          <span className="h-8 rounded-xl bg-white/10" />
+                        </div>
+                      </div>
+                      <div className="rounded-[1.1rem] border border-white/10 bg-white/8 p-2">
+                        <div className="flex h-full items-end gap-1.5">
+                          <span className="h-4 w-2.5 rounded-full bg-white/18" />
+                          <span className="h-8 w-2.5 rounded-full bg-portfolio-lilac/45" />
+                          <span className="h-6 w-2.5 rounded-full bg-portfolio-blue/45" />
+                          <span className="h-10 w-2.5 rounded-full bg-white/22" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 space-y-2.5">
+                    {[1, 2, 3].map((item) => (
+                      <div
+                        className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.05] px-2.5 py-2"
+                        key={item}
+                      >
+                        <span className="h-10 w-10 rounded-2xl bg-gradient-to-br from-portfolio-purple/30 to-portfolio-blue/20" />
+                        <div className="flex-1 space-y-1.5">
+                          <div className="h-2 w-16 rounded-full bg-white/16" />
+                          <div className="h-2 w-11 rounded-full bg-white/10" />
+                        </div>
+                        <span className="h-6 w-6 rounded-full border border-portfolio-lilac/25 bg-white/6" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-4 rounded-[1.15rem] border border-portfolio-blue/20 bg-gradient-to-r from-portfolio-purple/24 to-portfolio-blue/24 px-3 py-3">
+                    <div className="flex items-center justify-between">
+                      <div className="space-y-1.5">
+                        <div className="h-2 w-14 rounded-full bg-white/18" />
+                        <div className="h-2 w-10 rounded-full bg-white/10" />
+                      </div>
+                      <span className="h-9 w-9 rounded-2xl bg-white/14" />
+                    </div>
+                  </div>
+
+                  <div className="mt-4 grid grid-cols-4 gap-2">
+                    <span className="h-9 rounded-2xl border border-white/10 bg-white/6" />
+                    <span className="h-9 rounded-2xl border border-white/10 bg-white/6" />
+                    <span className="h-9 rounded-2xl border border-portfolio-lilac/20 bg-gradient-to-b from-portfolio-purple/24 to-portfolio-blue/18" />
+                    <span className="h-9 rounded-2xl border border-white/10 bg-white/6" />
+                  </div>
                 </div>
               </div>
             </motion.div>
 
-            {heroNodes.map(({ Icon, className, sizeClass }, index) => (
-              <motion.div
-                animate={{ y: [0, index % 2 === 0 ? -8 : 8, 0] }}
-                className={`absolute z-20 ${className}`}
-                key={className}
-                transition={{
-                  duration: 4.6 + index * 0.35,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                }}
-              >
-                <div className="rounded-[1.4rem] border border-white/12 bg-white/[0.05] p-3 shadow-lg shadow-black/10 backdrop-blur">
-                  <span className={`grid ${sizeClass} place-items-center rounded-[1rem] border border-portfolio-blue/25 bg-portfolio-blue/10 text-portfolio-lilac`}>
-                    <Icon size={16} />
-                  </span>
+            <motion.div
+              animate={{ y: [0, 8, 0], x: [0, -4, 0], rotate: [7, 9, 7] }}
+              className="absolute right-[2%] top-[14%] z-20 h-44 w-52 rotate-[7deg] sm:right-[6%] sm:h-52 sm:w-60 lg:right-[4%]"
+              transition={{ duration: 7.4, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <div className="relative h-full w-full overflow-hidden rounded-[1.9rem] border border-white/14 bg-white/[0.06] shadow-[0_24px_48px_rgba(0,0,0,0.22)] backdrop-blur-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-portfolio-purple/12" />
+                <div className="absolute inset-4">
+                  <div className="flex items-center justify-between">
+                    <div className="space-y-1.5">
+                      <div className="h-2 w-14 rounded-full bg-white/18" />
+                      <div className="h-2 w-10 rounded-full bg-white/10" />
+                    </div>
+                    <div className="flex gap-1.5">
+                      <span className="h-2.5 w-2.5 rounded-full bg-emerald-300/80 shadow-[0_0_12px_rgba(110,231,183,0.45)]" />
+                      <span className="h-2.5 w-2.5 rounded-full bg-amber-200/70" />
+                    </div>
+                  </div>
+
+                  <div className="mt-4 space-y-2.5">
+                    {[76, 58, 88, 64].map((width, index) => (
+                      <div
+                        className="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/[0.05] px-2.5 py-2"
+                        key={width}
+                      >
+                        <span className="h-4 w-4 rounded-md border border-white/12 bg-white/6">
+                          <span
+                            className={`mt-[3px] block h-1.5 w-1.5 rounded-sm ${
+                              index !== 1 ? 'ml-[3px] bg-portfolio-lilac/80' : 'ml-[3px] bg-white/10'
+                            }`}
+                          />
+                        </span>
+                        <div className="flex-1 space-y-1.5">
+                          <div
+                            className="h-2 rounded-full bg-gradient-to-r from-white/16 via-white/8 to-transparent"
+                            style={{ width: `${width}%` }}
+                          />
+                          <div className="h-2 w-1/2 rounded-full bg-white/8" />
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="mt-4 grid grid-cols-3 gap-2">
+                    <span className="h-10 rounded-xl border border-white/10 bg-white/6" />
+                    <span className="h-10 rounded-xl border border-portfolio-blue/18 bg-portfolio-blue/10" />
+                    <span className="h-10 rounded-xl border border-white/10 bg-white/6" />
+                  </div>
+
+                  <div className="mt-4 rounded-[1.15rem] border border-white/10 bg-gradient-to-r from-portfolio-purple/16 to-portfolio-blue/12 p-3">
+                    <div className="grid grid-cols-4 gap-1.5">
+                      <span className="h-8 rounded-lg bg-white/8" />
+                      <span className="h-8 rounded-lg bg-white/6" />
+                      <span className="h-8 rounded-lg bg-white/8" />
+                      <span className="h-8 rounded-lg bg-white/6" />
+                    </div>
+                  </div>
                 </div>
-              </motion.div>
-            ))}
-
-            <div className="absolute left-[18%] top-[24%] size-2 rounded-full bg-portfolio-lilac/80 shadow-[0_0_16px_rgba(167,139,250,0.7)]" />
-            <div className="absolute right-[22%] top-[32%] size-2.5 rounded-full bg-portfolio-blue/75 shadow-[0_0_18px_rgba(59,130,246,0.7)]" />
-            <div className="absolute left-[32%] bottom-[23%] size-2 rounded-full bg-portfolio-purple/75 shadow-[0_0_18px_rgba(109,59,255,0.75)]" />
-            <div className="absolute right-[30%] bottom-[20%] size-2 rounded-full bg-white/70 shadow-[0_0_14px_rgba(248,250,252,0.45)]" />
+              </div>
+            </motion.div>
 
             <motion.div
-              animate={{ opacity: [0.35, 0.6, 0.35] }}
-              className="absolute left-12 top-14 h-24 w-24 rounded-full bg-portfolio-purple/18 blur-2xl"
-              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+              animate={{ y: [0, -7, 0], x: [0, 3, 0], rotate: [-7, -5, -7] }}
+              className="absolute bottom-[7%] left-[4%] z-10 h-36 w-44 rotate-[-7deg] sm:h-40 sm:w-52 lg:bottom-[10%] lg:left-[8%]"
+              transition={{ duration: 8.2, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.055] shadow-[0_18px_34px_rgba(0,0,0,0.2)] backdrop-blur-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-portfolio-blue/12 via-transparent to-portfolio-lilac/10" />
+                <div className="absolute inset-4">
+                  <div className="flex items-center justify-between">
+                    <div className="space-y-1.5">
+                      <div className="h-2 w-12 rounded-full bg-white/18" />
+                      <div className="h-2 w-8 rounded-full bg-white/10" />
+                    </div>
+                    <span className="h-8 w-8 rounded-2xl bg-gradient-to-br from-portfolio-purple/26 to-portfolio-blue/22" />
+                  </div>
+
+                  <div className="mt-4 rounded-[1.1rem] border border-white/10 bg-white/[0.04] p-3">
+                    <div className="flex items-end gap-2">
+                      <span className="h-8 w-3 rounded-full bg-white/16" />
+                      <span className="h-12 w-3 rounded-full bg-portfolio-purple/36" />
+                      <span className="h-6 w-3 rounded-full bg-white/12" />
+                      <span className="h-10 w-3 rounded-full bg-portfolio-blue/36" />
+                    </div>
+                    <div className="mt-3 h-px bg-gradient-to-r from-transparent via-white/12 to-transparent" />
+                    <div className="mt-3 flex items-center justify-between">
+                      <span className="h-2 w-12 rounded-full bg-white/12" />
+                      <span className="h-6 w-14 rounded-full border border-portfolio-lilac/18 bg-white/6" />
+                    </div>
+                  </div>
+
+                  <div className="mt-3 flex items-center gap-2">
+                    <span className="h-2.5 w-2.5 rounded-full bg-portfolio-lilac/80 shadow-[0_0_10px_rgba(167,139,250,0.6)]" />
+                    <span className="h-2 flex-1 rounded-full bg-gradient-to-r from-portfolio-purple/24 via-portfolio-blue/22 to-transparent" />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              animate={{ opacity: [0.35, 0.58, 0.35] }}
+              className="absolute left-[18%] top-[14%] h-5 w-5 rounded-full bg-portfolio-lilac/85 shadow-[0_0_20px_rgba(167,139,250,0.8)]"
+              transition={{ duration: 4.2, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.div
-              animate={{ opacity: [0.25, 0.55, 0.25] }}
-              className="absolute bottom-10 right-14 h-28 w-28 rounded-full bg-portfolio-blue/18 blur-2xl"
+              animate={{ opacity: [0.24, 0.52, 0.24] }}
+              className="absolute right-[18%] top-[26%] h-4 w-4 rounded-full bg-portfolio-blue/85 shadow-[0_0_18px_rgba(59,130,246,0.75)]"
+              transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
+            />
+            <motion.div
+              animate={{ opacity: [0.2, 0.42, 0.2] }}
+              className="absolute left-[34%] bottom-[18%] h-4 w-4 rounded-full bg-portfolio-purple/80 shadow-[0_0_18px_rgba(109,59,255,0.75)]"
               transition={{ duration: 5.4, repeat: Infinity, ease: 'easeInOut' }}
-            />
-            <motion.div
-              animate={{ rotate: [0, 360] }}
-              className="absolute left-1/2 top-1/2 h-[16.5rem] w-[16.5rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/6"
-              transition={{ duration: 26, repeat: Infinity, ease: 'linear' }}
             />
           </div>
         </motion.div>

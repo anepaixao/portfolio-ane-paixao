@@ -26,10 +26,10 @@ export function Resume() {
                 className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
                 id="resume-title"
               >
-                Currículo
+                 Quer conhecer minha trajetória com mais detalhes?
               </h2>
               <p className="mt-5 text-xl font-semibold leading-snug text-portfolio-text sm:text-2xl">
-                Quer conhecer minha trajetória com mais detalhes?
+                
               </p>
               <p className="mt-4 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
                 Disponibilizo meu currículo principal com foco em

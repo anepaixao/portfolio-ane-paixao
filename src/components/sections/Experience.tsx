@@ -23,12 +23,9 @@ export function Experience() {
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="experiences-title"
           >
-            Experiências
+            Minha Trajetória 
           </h2>
-          <p className="mt-5 text-base leading-8 text-portfolio-muted sm:text-lg">
-            Atuações que combinam desenvolvimento, produto, pesquisa e
-            organização de soluções digitais com foco em problemas reais.
-          </p>
+          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
         </div>
 
         <div className="mt-12 space-y-6 lg:relative lg:space-y-0">

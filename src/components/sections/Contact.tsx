@@ -48,11 +48,10 @@ export function Contact() {
                 className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
                 id="contact-title"
               >
-                Contato
+                Vamos construir algo juntos?
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-                Vamos conversar sobre tecnologia, produto ou oportunidades de
-                estágio?
+               Entre em contato para transformar suas ideias em realidade. Estou disponível para discutir projetos, oportunidades de colaboração ou qualquer outra coisa que você tenha em mente.
               </p>
             </div>
 

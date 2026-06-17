@@ -56,13 +56,9 @@ export function Process() {
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="process-title"
           >
-            Meu processo de construção
+            Ecossistemas digitais
           </h2>
-          <p className="mt-5 max-w-2xl text-base leading-8 text-portfolio-muted sm:text-lg">
-            Meu processo conecta visão de produto e construção técnica: parto
-            de problemas reais, organizo o escopo, desenho fluxos, desenvolvo
-            interfaces e evoluo a solução com aprendizado contínuo.
-          </p>
+          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
         </div>
 
         <motion.div

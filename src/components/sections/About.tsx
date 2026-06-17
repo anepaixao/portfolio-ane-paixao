@@ -37,21 +37,18 @@ export function About() {
           <div className="mt-8 rounded-3xl border border-white/10 bg-portfolio-card/75 p-6 shadow-xl shadow-black/10 sm:p-8">
             <div className="space-y-5 text-base leading-8 text-portfolio-muted sm:text-lg">
               <p>
-                Sou estudante de Ciência da Computação na UESC e desenvolvedora front-end/mobile 
-                em formação, com interesse em desenvolvimento de software, 
+                Sou estudante de Ciência da Computação na UESC e desenvolvedora 
+                de software em formação, com foco em desenvolvimento mobile, 
                 produto digital e inteligência artificial aplicada.
               </p>
               <p>
-               Minha trajetória combina programação, pesquisa acadêmica, 
-               liderança de projetos e construção de soluções digitais. 
-               Tenho experiência com aplicativos mobile, MVPs, documentação 
-               de regras de negócio, análise de problemas reais e 
-               comunicação com diferentes perfis de pessoas.
+              Minha trajetória combina programação, pesquisa acadêmica e
+              liderança de projetos, com experiência na construção de soluções digitais,
+              definição de escopo, documentação de regras de negócio e organização de MVPs.
               </p>
               <p>
-                Atualmente, busco oportunidades de estágio e posições 
-                iniciais onde eu possa aprender, contribuir com times de tecnologia e 
-                desenvolver soluções que gerem impacto para usuários e negócios.
+                Atuo na interseção entre tecnologia, produto e usuário,
+                transformando problemas reais em soluções digitais mais claras, úteis e acessíveis.
               </p>
             </div>
           </div>
