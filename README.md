@@ -73,6 +73,6 @@ Em desenvolvimento.
 
 ## Contato
 
-- GitHub: https://github.com/anealmeida191
+- GitHub: https://github.com/anepaixao
 - E-mail profissional: anepaixao50@gmail.com
-- LinkedIn: em breve
+- LinkedIn: https://linkedin.com/in/aneapaixao
