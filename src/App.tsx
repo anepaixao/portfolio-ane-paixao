@@ -4,6 +4,7 @@ import { About } from './components/sections/About';
 import { Contact } from './components/sections/Contact';
 import { Experience } from './components/sections/Experience';
 import { Hero } from './components/sections/Hero';
+import { Process } from './components/sections/Process';
 import { Projects } from './components/sections/Projects';
 import { Resume } from './components/sections/Resume';
 import { Skills } from './components/sections/Skills';
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <Process />
         <Projects />
         <Experience />
         <Skills />

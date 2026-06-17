@@ -9,7 +9,16 @@ export const skills: SkillCategory[] = [
     category: 'Desenvolvimento Front-end/Mobile',
     description:
       'Criação de interfaces e experiências digitais responsivas, com foco em usabilidade, organização de componentes e desenvolvimento mobile.',
-    skills: ['Git', 'GitHub', 'VS Code', 'Linux', 'Notion', 'Figma', 'Trello', 'Kanban', 'Documentação técnica'],
+    skills: [
+      'React',
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'Tailwind CSS',
+    ],
   },
   {
     category: 'Desenvolvimento de Software',
@@ -59,6 +68,16 @@ export const skills: SkillCategory[] = [
     category: 'Ferramentas e Organização',
     description:
       'Ferramentas usadas para desenvolvimento, documentação, organização de projetos e colaboração.',
-    skills: ['VS Code', 'Linux', 'Notion', 'Figma', 'Trello', 'Kanban', 'Documentação técnica'],
+    skills: [
+      'Git',
+      'GitHub',
+      'VS Code',
+      'Linux',
+      'Notion',
+      'Figma',
+      'Trello',
+      'Kanban',
+      'Documentação técnica',
+    ],
   },
 ];
