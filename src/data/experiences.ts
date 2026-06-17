@@ -9,17 +9,17 @@ export type Experience = {
 
 export const experiences: Experience[] = [
   {
-    role: 'Cofundadora, Produto e Front-end/Mobile',
+    role: 'CEO, Cofundadora, Produto e Front-end/Mobile',
     organization: 'Blue Eggs',
     period: 'Out 2025 — atual',
     description:
-      'Aplicativo de delivery local desenvolvido como MVP para conectar pequenos comércios, consumidores e pedidos em uma experiência simples, acessível e focada no contexto de Buerarema-BA.',
+      'Atuação na liderança da Blue Eggs e na construção do Macuco Entregas, conectando definição de escopo, regras de negócio, experiência do usuário e desenvolvimento front-end/mobile em um MVP voltado ao comércio local de Buerarema-BA.',
     highlights: [
       'Estruturação do produto e escopo do MVP',
       'Organização de regras de negócio',
-      'Desenvolvimento mobile com React Native e Expo',
-      'Comunicação com equipe técnica',
-      'Foco em experiência do usuário e comércio local',
+      'Desenvolvimento front-end/mobile com React Native, Expo e TypeScript',
+      'Alinhamento entre equipe, produto e experiência do usuário',
+      'Foco em soluções digitais para comércio local',
     ],
     type: 'Produto & Mobile',
   },
