@@ -75,4 +75,4 @@ Em desenvolvimento.
 
 - GitHub: https://github.com/anepaixao
 - E-mail profissional: anepaixao50@gmail.com
-- LinkedIn: https://linkedin.com/in/aneapaixao
+- LinkedIn: https://linkedin,com/in/aneapaixao
