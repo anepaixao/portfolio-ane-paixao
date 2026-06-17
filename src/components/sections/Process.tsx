@@ -3,6 +3,7 @@ import {
   Blocks,
   Code2,
   Layout,
+  Orbit,
   Search,
   TrendingUp,
 } from 'lucide-react';
@@ -49,7 +50,10 @@ export function Process() {
     >
       <div className="section-shell">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
+          <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
+            <span className="grid size-6 place-items-center rounded-full border border-white/10 bg-white/[0.04] text-portfolio-lilac">
+              <Orbit size={13} />
+            </span>
             Processo
           </p>
           <h2
