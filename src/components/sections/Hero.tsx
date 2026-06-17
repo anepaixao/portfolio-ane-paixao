@@ -10,39 +10,39 @@ export function Hero() {
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-portfolio-lilac to-transparent" />
       <div className="pointer-events-none absolute -left-20 top-20 size-72 rounded-full border border-white/10 bg-gradient-to-br from-portfolio-purple/20 to-transparent blur-sm" />
       <div className="pointer-events-none absolute right-[-5rem] top-28 size-80 rounded-full border border-portfolio-blue/20 bg-gradient-to-br from-portfolio-blue/20 via-portfolio-lilac/10 to-transparent blur-md" />
-      <div className="pointer-events-none absolute bottom-10 left-1/2 h-px w-[38rem] -translate-x-1/2 rotate-[-12deg] bg-gradient-to-r from-transparent via-white/15 to-transparent" />
-      <div className="pointer-events-none absolute bottom-28 right-1/4 h-px w-80 rotate-[18deg] bg-gradient-to-r from-transparent via-portfolio-lilac/25 to-transparent" />
+      <div className="pointer-events-none absolute bottom-10 left-1/2 hidden h-px w-[38rem] -translate-x-1/2 rotate-[-12deg] bg-gradient-to-r from-transparent via-white/15 to-transparent sm:block" />
+      <div className="pointer-events-none absolute bottom-28 right-1/4 hidden h-px w-80 rotate-[18deg] bg-gradient-to-r from-transparent via-portfolio-lilac/25 to-transparent sm:block" />
 
-      <div className="section-shell grid min-h-[calc(100svh-64px)] items-center gap-14 py-20 sm:py-24 lg:grid-cols-[1.02fr_0.98fr] lg:py-28">
+      <div className="section-shell grid min-h-[calc(100svh-64px)] grid-cols-1 items-center gap-10 py-16 sm:gap-12 sm:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:gap-14 lg:py-28">
         <div className="max-w-3xl">
-          <p className="inline-flex max-w-full whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-portfolio-lilac sm:px-4 sm:text-xs">
+          <p className="inline-flex max-w-full whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-portfolio-lilac sm:px-4 sm:text-xs sm:tracking-[0.12em]">
             Desenvolvedora de Software | Produto Digital | IA Aplicada
           </p>
 
-          <h4 className="mt-7 text-4xl font-black leading-tight text-portfolio-text sm:text-[2.85rem] lg:text-[4.5rem]">
+          <h4 className="mt-6 max-w-[12ch] text-[2.15rem] font-black leading-[1.05] text-portfolio-text sm:mt-7 sm:max-w-none sm:text-[2.85rem] lg:text-[4.5rem]">
             Olá, eu sou Ane Paixão.
           </h4>
 
-          <p className="mt-10 max-w-2xl text-xl font-medium leading-snug text-portfolio-text sm:text-[1.7rem]">
+          <p className="mt-6 max-w-xl text-lg font-medium leading-snug text-portfolio-text sm:mt-8 sm:max-w-2xl sm:text-[1.7rem]">
             Construindo produtos digitais com tecnologia, propósito e visão de
             usuário.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap">
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition duration-200 hover:scale-[1.02] hover:shadow-portfolio-blue/20 focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition duration-200 hover:scale-[1.02] hover:shadow-portfolio-blue/20 focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg sm:w-auto"
               href="#projetos"
             >
               Ver projetos
             </a>
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac hover:text-portfolio-lilac focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-bg sm:w-auto"
               href="#curriculo"
             >
               Baixar currículo
             </a>
             <a
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-white/15 px-6 text-sm font-bold text-portfolio-muted transition duration-200 hover:border-portfolio-blue hover:text-portfolio-text focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:ring-offset-2 focus:ring-offset-portfolio-bg"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white/15 px-6 text-sm font-bold text-portfolio-muted transition duration-200 hover:border-portfolio-blue hover:text-portfolio-text focus:outline-none focus:ring-2 focus:ring-portfolio-blue focus:ring-offset-2 focus:ring-offset-portfolio-bg sm:w-auto"
               href="#contato"
             >
               Entrar em contato
@@ -52,16 +52,16 @@ export function Hero() {
 
         <motion.div
           animate={{ opacity: 1, y: 0 }}
-          className="relative mx-auto w-full max-w-[34rem] lg:ml-auto"
+          className="relative mx-auto w-full max-w-[20rem] sm:max-w-[27rem] lg:ml-auto lg:max-w-[34rem]"
           initial={{ opacity: 0, y: 18 }}
           transition={{ duration: 0.75, ease: 'easeOut' }}
         >
-          <div className="absolute -inset-6 rounded-[3rem] bg-gradient-to-br from-portfolio-purple/18 via-portfolio-blue/10 to-portfolio-lilac/15 blur-3xl" />
-          <div className="absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-portfolio-lilac/10 blur-3xl" />
-          <div className="absolute right-8 top-8 h-24 w-24 rounded-full bg-portfolio-blue/12 blur-2xl" />
-          <div className="absolute left-10 bottom-10 h-28 w-28 rounded-full bg-portfolio-purple/12 blur-2xl" />
+          <div className="absolute -inset-4 rounded-[3rem] bg-gradient-to-br from-portfolio-purple/18 via-portfolio-blue/10 to-portfolio-lilac/15 blur-3xl sm:-inset-6" />
+          <div className="absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-full bg-portfolio-lilac/10 blur-3xl sm:h-72 sm:w-72" />
+          <div className="absolute right-4 top-6 h-16 w-16 rounded-full bg-portfolio-blue/12 blur-2xl sm:right-8 sm:top-8 sm:h-24 sm:w-24" />
+          <div className="absolute bottom-8 left-6 h-20 w-20 rounded-full bg-portfolio-purple/12 blur-2xl sm:left-10 sm:bottom-10 sm:h-28 sm:w-28" />
 
-          <div className="relative h-[25rem] [perspective:1400px] sm:h-[29rem]">
+          <div className="relative h-[20rem] [perspective:1400px] sm:h-[24rem] lg:h-[29rem]">
             <svg
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 h-full w-full text-portfolio-lilac/18"
@@ -101,7 +101,7 @@ export function Hero() {
 
             <motion.div
               animate={{ y: [0, -10, 0], rotate: [-3, -1.5, -3] }}
-              className="absolute left-1/2 top-[6%] z-30 h-[21.5rem] w-[11.25rem] -translate-x-1/2 sm:h-[25rem] sm:w-[13rem] lg:top-[4%]"
+              className="absolute left-1/2 top-[8%] z-30 h-[17rem] w-[9rem] -translate-x-1/2 sm:h-[21rem] sm:w-[11.25rem] lg:top-[4%] lg:h-[25rem] lg:w-[13rem]"
               transition={{ duration: 6.6, repeat: Infinity, ease: 'easeInOut' }}
             >
               <div className="relative h-full w-full rounded-[2.35rem] border border-white/16 bg-[#120c26]/85 p-2 shadow-[0_30px_70px_rgba(6,4,18,0.55)] backdrop-blur-2xl">
@@ -182,7 +182,7 @@ export function Hero() {
 
             <motion.div
               animate={{ y: [0, 8, 0], x: [0, -4, 0], rotate: [7, 9, 7] }}
-              className="absolute right-[2%] top-[14%] z-20 h-44 w-52 rotate-[7deg] sm:right-[6%] sm:h-52 sm:w-60 lg:right-[4%]"
+              className="absolute right-[1%] top-[16%] z-20 h-32 w-36 rotate-[7deg] sm:right-[6%] sm:h-44 sm:w-52 lg:right-[4%] lg:h-52 lg:w-60"
               transition={{ duration: 7.4, repeat: Infinity, ease: 'easeInOut' }}
             >
               <div className="relative h-full w-full overflow-hidden rounded-[1.9rem] border border-white/14 bg-white/[0.06] shadow-[0_24px_48px_rgba(0,0,0,0.22)] backdrop-blur-2xl">
@@ -243,7 +243,7 @@ export function Hero() {
 
             <motion.div
               animate={{ y: [0, -7, 0], x: [0, 3, 0], rotate: [-7, -5, -7] }}
-              className="absolute bottom-[7%] left-[4%] z-10 h-36 w-44 rotate-[-7deg] sm:h-40 sm:w-52 lg:bottom-[10%] lg:left-[8%]"
+              className="absolute bottom-[9%] left-[2%] z-10 h-28 w-32 rotate-[-7deg] sm:left-[4%] sm:h-36 sm:w-44 lg:bottom-[10%] lg:left-[8%] lg:h-40 lg:w-52"
               transition={{ duration: 8.2, repeat: Infinity, ease: 'easeInOut' }}
             >
               <div className="relative h-full w-full overflow-hidden rounded-[1.75rem] border border-white/12 bg-white/[0.055] shadow-[0_18px_34px_rgba(0,0,0,0.2)] backdrop-blur-2xl">
@@ -281,17 +281,17 @@ export function Hero() {
 
             <motion.div
               animate={{ opacity: [0.35, 0.58, 0.35] }}
-              className="absolute left-[18%] top-[14%] h-5 w-5 rounded-full bg-portfolio-lilac/85 shadow-[0_0_20px_rgba(167,139,250,0.8)]"
+              className="absolute left-[18%] top-[14%] h-4 w-4 rounded-full bg-portfolio-lilac/85 shadow-[0_0_20px_rgba(167,139,250,0.8)] sm:h-5 sm:w-5"
               transition={{ duration: 4.2, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.div
               animate={{ opacity: [0.24, 0.52, 0.24] }}
-              className="absolute right-[18%] top-[26%] h-4 w-4 rounded-full bg-portfolio-blue/85 shadow-[0_0_18px_rgba(59,130,246,0.75)]"
+              className="absolute right-[18%] top-[26%] h-3.5 w-3.5 rounded-full bg-portfolio-blue/85 shadow-[0_0_18px_rgba(59,130,246,0.75)] sm:h-4 sm:w-4"
               transition={{ duration: 4.8, repeat: Infinity, ease: 'easeInOut' }}
             />
             <motion.div
               animate={{ opacity: [0.2, 0.42, 0.2] }}
-              className="absolute left-[34%] bottom-[18%] h-4 w-4 rounded-full bg-portfolio-purple/80 shadow-[0_0_18px_rgba(109,59,255,0.75)]"
+              className="absolute left-[34%] bottom-[18%] h-3.5 w-3.5 rounded-full bg-portfolio-purple/80 shadow-[0_0_18px_rgba(109,59,255,0.75)] sm:h-4 sm:w-4"
               transition={{ duration: 5.4, repeat: Infinity, ease: 'easeInOut' }}
             />
           </div>
