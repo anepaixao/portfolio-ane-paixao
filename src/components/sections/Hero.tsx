@@ -17,7 +17,7 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex h-auto max-w-full rounded-full border border-white/10 bg-white/5 px-3 py-2 sm:w-fit sm:px-5 sm:py-2">
             <p className="flex max-w-full flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center text-[10px] font-semibold uppercase leading-snug tracking-[0.04em] text-portfolio-lilac sm:flex-nowrap sm:gap-x-2 sm:text-xs sm:tracking-[0.12em]">
-              <span className="whitespace-nowrap">Desenvolvedora de Software</span>
+              <span className="whitespace-nowrap">Software</span>
               <span aria-hidden="true" className="text-white/35">
                 |
               </span>
@@ -32,10 +32,15 @@ export function Hero() {
           <h4 className="mt-6 max-w-[12ch] text-[2.15rem] font-black leading-[1.05] text-portfolio-text sm:mt-7 sm:max-w-none sm:text-[2.85rem] lg:text-[4.5rem]">
             Olá, eu sou Ane Paixão.
           </h4>
-
-          <p className="mt-6 max-w-xl text-lg font-medium leading-snug text-portfolio-text sm:mt-8 sm:max-w-2xl sm:text-[1.7rem]">
-            Construindo produtos digitais com tecnologia, propósito e visão de
-            usuário.
+          <p className="mt-6 max-w-xl font-['Fredoka'] text-[2rem] font-semibold leading-tight tracking-tight sm:mt-8 sm:max-w-2xl sm:text-[2.8rem]">
+            <span className="bg-gradient-to-r from-[#A78BFA] via-[#6D3BFF] to-[#3B82F6] bg-clip-text text-transparent">
+              Desenvolvedora de software
+            </span>
+          </p>
+          <p className="mt-6 max-w-xl text-base font-normal leading-relaxed text-portfolio-muted sm:mt-8 sm:max-w-2xl sm:text-lg">
+            Sou desenvolvedora de software em formação, com foco em front-end/mobile,
+            produto digital e inteligência artificial aplicada. Gosto de transformar
+            problemas reais em soluções digitais claras, úteis e bem organizadas.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:flex-wrap">
