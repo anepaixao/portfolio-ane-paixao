@@ -15,9 +15,19 @@ export function Hero() {
 
       <div className="section-shell grid min-h-[calc(100svh-64px)] grid-cols-1 items-center gap-10 py-16 sm:gap-12 sm:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:gap-14 lg:py-28">
         <div className="max-w-3xl">
-          <p className="inline-flex max-w-full whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-portfolio-lilac sm:px-4 sm:text-xs sm:tracking-[0.12em]">
-            Desenvolvedora de Software | Produto Digital | IA Aplicada
-          </p>
+          <div className="inline-flex h-auto max-w-full rounded-full border border-white/10 bg-white/5 px-3 py-2 sm:w-fit sm:px-5 sm:py-2">
+            <p className="flex max-w-full flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center text-[10px] font-semibold uppercase leading-snug tracking-[0.04em] text-portfolio-lilac sm:flex-nowrap sm:gap-x-2 sm:text-xs sm:tracking-[0.12em]">
+              <span className="whitespace-nowrap">Desenvolvedora de Software</span>
+              <span aria-hidden="true" className="text-white/35">
+                |
+              </span>
+              <span className="whitespace-nowrap">Produto Digital</span>
+              <span aria-hidden="true" className="text-white/35">
+                |
+              </span>
+              <span className="whitespace-nowrap">IA Aplicada</span>
+            </p>
+          </div>
 
           <h4 className="mt-6 max-w-[12ch] text-[2.15rem] font-black leading-[1.05] text-portfolio-text sm:mt-7 sm:max-w-none sm:text-[2.85rem] lg:text-[4.5rem]">
             Olá, eu sou Ane Paixão.
