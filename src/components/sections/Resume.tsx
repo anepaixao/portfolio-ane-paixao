@@ -57,7 +57,7 @@ export function Resume() {
               <a
                 className="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue px-6 text-sm font-bold text-white shadow-lg shadow-portfolio-purple/20 transition duration-200 hover:scale-[1.02] hover:shadow-portfolio-blue/20 focus:outline-none focus:ring-2 focus:ring-portfolio-lilac focus:ring-offset-2 focus:ring-offset-portfolio-card"
                 download
-                href="/resume.pdf"
+                href="/Curriculo_Ane_Paixao.pdf"
                 rel="noreferrer"
                 target="_blank"
               >
