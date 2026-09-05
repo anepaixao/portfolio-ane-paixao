@@ -6,11 +6,12 @@ import {
   useScroll,
 } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const navItems = [
   { label: 'Início', href: '#inicio' },
   { label: 'Sobre', href: '#sobre' },
+  { label: 'Processo', href: '#processo' },
   { label: 'Projetos', href: '#projetos' },
   { label: 'Experiências', href: '#experiencias' },
   { label: 'Habilidades', href: '#habilidades' },
@@ -25,9 +26,7 @@ export function Header() {
   const prefersReducedMotion = useReducedMotion();
   const { scrollY, scrollYProgress } = useScroll();
 
-  useMotionValueEvent(scrollY, 'change', (latest) => {
-    setHasScrolled(latest > 24);
-
+  const updateActiveSection = useCallback(() => {
     const activationLine = 136;
     let currentHref = '#inicio';
 
@@ -46,7 +45,38 @@ export function Header() {
       currentHref = '#contato';
     }
 
-    setActiveHref(currentHref);
+    setActiveHref((current) =>
+      current === currentHref ? current : currentHref,
+    );
+  }, []);
+
+  useEffect(() => {
+    updateActiveSection();
+  }, [updateActiveSection]);
+
+  useEffect(() => {
+    if (!isOpen) {
+      return undefined;
+    }
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', handleEscape);
+
+    return () => window.removeEventListener('keydown', handleEscape);
+  }, [isOpen]);
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    setHasScrolled((current) => {
+      const next = latest > 24;
+      return current === next ? current : next;
+    });
+
+    updateActiveSection();
   });
 
   const handleNavigation = (href: string) => {
@@ -58,8 +88,8 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-300 ${
         hasScrolled
-          ? 'border-white/10 bg-portfolio-bg/78 shadow-[0_12px_40px_rgba(4,2,16,0.22)] backdrop-blur-2xl'
-          : 'border-transparent bg-portfolio-bg/45 backdrop-blur-xl'
+          ? 'border-white/10 bg-portfolio-bg/82 shadow-[0_12px_36px_rgba(4,2,16,0.2)] backdrop-blur-2xl'
+          : 'border-transparent bg-portfolio-bg/52 backdrop-blur-xl'
       }`}
     >
       <nav
@@ -139,7 +169,7 @@ export function Header() {
         {isOpen && (
           <motion.div
             animate={{ opacity: 1, y: 0 }}
-            className="border-t border-white/10 bg-portfolio-bg/94 backdrop-blur-2xl lg:hidden"
+            className="absolute inset-x-0 top-full max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-white/10 bg-portfolio-bg/96 shadow-[0_18px_44px_rgba(4,2,16,0.28)] backdrop-blur-2xl lg:hidden"
             exit={{ opacity: 0, y: -8 }}
             id="mobile-navigation"
             initial={{ opacity: 0, y: -8 }}
@@ -153,7 +183,7 @@ export function Header() {
                   <motion.a
                     animate={{ opacity: 1, x: 0 }}
                     aria-current={isActive ? 'page' : undefined}
-                    className={`relative overflow-hidden rounded-2xl px-4 py-3 text-sm font-medium transition-colors duration-200 ${
+                    className={`relative overflow-hidden rounded-lg px-4 py-3 text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-portfolio-lilac/70 ${
                       isActive
                         ? 'text-portfolio-text'
                         : 'text-portfolio-muted hover:bg-white/[0.05] hover:text-portfolio-lilac'
