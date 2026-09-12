@@ -9,7 +9,6 @@ import {
 } from 'lucide-react';
 import type { ComponentType } from 'react';
 import { projects, type Project } from '../../data/projects';
-import { ProjectPreview } from '../ui/ProjectPreview';
 
 const projectIcons: Record<string, ComponentType<{ size?: number; className?: string }>> = {
   'Macuco Entregas': ShoppingBag,
@@ -22,6 +21,35 @@ const statusStyles: Record<string, string> = {
     'border-portfolio-blue/30 bg-portfolio-blue/10 text-portfolio-lilac',
   'Pesquisa acadêmica':
     'border-portfolio-lilac/30 bg-portfolio-lilac/10 text-portfolio-lilac',
+};
+
+const projectAccents: Record<
+  string,
+  {
+    glow: string;
+    icon: string;
+    line: string;
+    subtitle: string;
+  }
+> = {
+  'Macuco Entregas': {
+    glow: 'group-hover:shadow-portfolio-purple/10',
+    icon: 'from-portfolio-purple/24 via-portfolio-blue/12 to-portfolio-lilac/18',
+    line: 'from-portfolio-purple via-portfolio-lilac to-transparent',
+    subtitle: 'Produto mobile, delivery local e organização de MVP',
+  },
+  FinanceirAne: {
+    glow: 'group-hover:shadow-portfolio-blue/10',
+    icon: 'from-portfolio-blue/24 via-portfolio-purple/12 to-portfolio-lilac/18',
+    line: 'from-portfolio-blue via-portfolio-lilac to-transparent',
+    subtitle: 'Finanças pessoais, automação e experiência conversacional',
+  },
+  'IA na Robótica Educacional': {
+    glow: 'group-hover:shadow-portfolio-lilac/10',
+    icon: 'from-portfolio-lilac/22 via-portfolio-purple/14 to-portfolio-blue/14',
+    line: 'from-portfolio-lilac via-portfolio-purple to-transparent',
+    subtitle: 'Pesquisa acadêmica, IA aplicada e educação STEM',
+  },
 };
 
 export function Projects() {
@@ -59,7 +87,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="mt-10 space-y-6 lg:mt-12 lg:space-y-8">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project, index) => (
             <ProjectShowcaseCard
               index={index}
@@ -86,22 +114,26 @@ function ProjectShowcaseCard({
   project,
 }: ProjectShowcaseCardProps) {
   const ProjectIcon = projectIcons[project.title] ?? FolderKanban;
-  const isReversed = index % 2 === 1;
+  const accent = projectAccents[project.title] ?? {
+    glow: 'group-hover:shadow-portfolio-purple/10',
+    icon: 'from-portfolio-purple/20 via-portfolio-blue/12 to-portfolio-lilac/16',
+    line: 'from-portfolio-purple via-portfolio-blue to-transparent',
+    subtitle: 'Projeto de tecnologia e produto digital',
+  };
   const statusClass =
     statusStyles[project.status] ??
     'border-white/10 bg-white/[0.04] text-portfolio-muted';
 
   return (
     <motion.article
-      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-portfolio-card/95 p-4 shadow-xl shadow-black/10 transition duration-300 hover:border-portfolio-lilac/45 hover:shadow-portfolio-purple/10 sm:p-5 lg:p-6"
+      className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-portfolio-card/95 p-5 shadow-xl shadow-black/10 transition duration-300 hover:border-portfolio-lilac/45 sm:p-6 ${accent.glow}`}
       initial={
         prefersReducedMotion
           ? false
           : {
               opacity: 0,
-              rotateX: 2,
-              scale: 0.985,
-              y: 28,
+              scale: 0.98,
+              y: 24,
             }
       }
       transition={{
@@ -116,7 +148,6 @@ function ProjectShowcaseCard({
           ? undefined
           : {
               opacity: 1,
-              rotateX: 0,
               scale: 1,
               y: 0,
             }
@@ -124,98 +155,93 @@ function ProjectShowcaseCard({
     >
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-portfolio-lilac/45 to-transparent opacity-60"
+        className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${accent.line} opacity-70`}
       />
 
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,0.94fr)_minmax(0,1.06fr)] lg:items-stretch">
-        <div className={isReversed ? 'lg:order-last' : undefined}>
-          <ProjectPreview title={project.title} />
-        </div>
-
-        <div className="flex min-w-0 flex-col">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-            <div className="flex min-w-0 items-start gap-4">
-              <span className="relative mt-1 grid size-12 shrink-0 place-items-center rounded-2xl border border-portfolio-lilac/25 bg-gradient-to-br from-portfolio-purple/18 via-portfolio-blue/10 to-portfolio-lilac/18 text-portfolio-lilac shadow-lg shadow-portfolio-purple/10">
-                <ProjectIcon aria-hidden="true" size={19} />
-                <span
-                  aria-hidden="true"
-                  className="absolute inset-1 rounded-[0.9rem] border border-white/10"
-                />
-              </span>
-
-              <div className="min-w-0">
-                <h3 className="text-2xl font-black leading-tight text-portfolio-text sm:text-3xl">
-                  {project.title}
-                </h3>
-                <p className="mt-2 text-sm font-semibold text-portfolio-lilac">
-                  {project.title === 'IA na Robótica Educacional'
-                    ? 'Pesquisa, IA aplicada e educação STEM'
-                    : 'Produto digital em desenvolvimento'}
-                </p>
-              </div>
-            </div>
-
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between xl:flex-col">
+        <div className="flex min-w-0 items-start gap-4">
+          <motion.span
+            className={`relative mt-1 grid size-12 shrink-0 place-items-center rounded-2xl border border-portfolio-lilac/25 bg-gradient-to-br text-portfolio-lilac shadow-lg shadow-portfolio-purple/10 ${accent.icon}`}
+            whileHover={
+              prefersReducedMotion ? undefined : { rotate: -3, scale: 1.04 }
+            }
+          >
+            <ProjectIcon aria-hidden="true" size={19} />
             <span
-              className={`w-fit shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${statusClass}`}
-            >
-              {project.status}
-            </span>
-          </div>
+              aria-hidden="true"
+              className="absolute inset-1 rounded-[0.9rem] border border-white/10"
+            />
+          </motion.span>
 
-          <p className="mt-5 max-w-3xl text-base leading-7 text-portfolio-muted">
-            {project.description}
-          </p>
-
-          <div className="mt-6">
-            <p className="text-sm font-bold uppercase tracking-[0.14em] text-portfolio-lilac">
-              Destaques
+          <div className="min-w-0">
+            <h3 className="text-xl font-black leading-tight text-portfolio-text sm:text-2xl">
+              {project.title}
+            </h3>
+            <p className="mt-2 text-sm font-semibold leading-6 text-portfolio-lilac">
+              {accent.subtitle}
             </p>
-            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-              {project.highlights.map((highlight) => (
-                <li
-                  className="flex min-w-0 gap-3 rounded-xl border border-white/8 bg-white/[0.035] p-3 text-sm leading-6 text-portfolio-muted"
-                  key={`${project.title}-${highlight}`}
-                >
-                  <CheckCircle2
-                    aria-hidden="true"
-                    className="mt-0.5 shrink-0 text-portfolio-lilac"
-                    size={16}
-                  />
-                  <span>{highlight}</span>
-                </li>
-              ))}
-            </ul>
           </div>
-
-          <div className="mt-6 flex flex-wrap gap-2">
-            {project.tags.map((tag) => (
-              <span
-                className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-portfolio-muted transition duration-200 group-hover:border-portfolio-purple/35"
-                key={`${project.title}-${tag}`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-
-          {project.links && project.links.length > 0 && (
-            <div className="mt-7 flex flex-wrap gap-3">
-              {project.links.map((link) => (
-                <a
-                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10 px-4 py-2 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac/70 hover:bg-portfolio-lilac/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-portfolio-lilac/70"
-                  href={link.href}
-                  key={`${project.title}-${link.href}`}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <ArrowUpRight aria-hidden="true" size={16} />
-                  {link.label}
-                </a>
-              ))}
-            </div>
-          )}
         </div>
+
+        <span
+          className={`w-fit shrink-0 rounded-full border px-3 py-1 text-xs font-semibold ${statusClass}`}
+        >
+          {project.status}
+        </span>
       </div>
+
+      <p className="mt-5 text-sm leading-7 text-portfolio-muted sm:text-base">
+        {project.description}
+      </p>
+
+      <div className="mt-6">
+        <p className="text-xs font-bold uppercase tracking-[0.14em] text-portfolio-lilac">
+          Contribuições
+        </p>
+        <ul className="mt-3 space-y-2.5">
+          {project.highlights.map((highlight) => (
+            <li
+              className="flex min-w-0 gap-2.5 text-sm leading-6 text-portfolio-muted"
+              key={`${project.title}-${highlight}`}
+            >
+              <CheckCircle2
+                aria-hidden="true"
+                className="mt-1 shrink-0 text-portfolio-lilac"
+                size={15}
+              />
+              <span>{highlight}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-6 flex flex-wrap gap-2">
+        {project.tags.map((tag) => (
+          <span
+            className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs font-semibold text-portfolio-muted transition duration-200 group-hover:border-portfolio-purple/35"
+            key={`${project.title}-${tag}`}
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+
+      {project.links && project.links.length > 0 && (
+        <div className="mt-7 flex flex-wrap gap-3">
+          {project.links.map((link) => (
+            <a
+              className="inline-flex min-h-11 items-center gap-2 rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10 px-4 py-2 text-sm font-bold text-portfolio-text transition duration-200 hover:border-portfolio-lilac/70 hover:bg-portfolio-lilac/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-portfolio-lilac/70"
+              href={link.href}
+              key={`${project.title}-${link.href}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <ArrowUpRight aria-hidden="true" size={16} />
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </motion.article>
   );
 }
