@@ -4,80 +4,10 @@ export type SkillCategory = {
   skills: string[];
 };
 
+
 export const skills: SkillCategory[] = [
-  {
-    category: 'Desenvolvimento Front-end/Mobile',
-    description:
-      'Criação de interfaces e experiências digitais responsivas, com foco em usabilidade, organização de componentes e desenvolvimento mobile.',
-    skills: [
-      'React',
-      'React Native',
-      'Expo',
-      'TypeScript',
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'Tailwind CSS',
-    ],
-  },
-  {
-    category: 'Desenvolvimento de Software',
-    description:
-      'Base em lógica, estruturação de projetos, programação e construção de soluções digitais com boas práticas.',
-    skills: [
-      'JavaScript',
-      'TypeScript',
-      'Python',
-      'Node.js',
-      'C',
-      'APIs REST',
-      'Lógica de programação',
-      'Organização de projetos',
-    ],
-  },
-  {
-    category: 'Produto Digital',
-    description:
-      'Atuação na organização de MVPs, entendimento de problemas reais, priorização e construção de soluções com foco no usuário.',
-    skills: [
-      'Entendimento de problemas',
-      'Discovery inicial',
-      'MVP',
-      'User stories',
-      'Priorização',
-      'Regras de negócio',
-      'Visão de usuário',
-      'Comunicação com stakeholders',
-    ],
-  },
-  {
-    category: 'IA Aplicada e Pesquisa',
-    description:
-      'Experiência acadêmica e prática com investigação, análise e aplicação de inteligência artificial em contextos reais.',
-    skills: [
-      'IA aplicada',
-      'Pesquisa acadêmica',
-      'Análise comparativa',
-      'Robótica educacional',
-      'Educação STEM',
-      'Automação com IA',
-      'Escrita técnica',
-    ],
-  },
-  {
-    category: 'Ferramentas e Organização',
-    description:
-      'Ferramentas usadas para desenvolvimento, documentação, organização de projetos e colaboração.',
-    skills: [
-      'Git',
-      'GitHub',
-      'VS Code',
-      'Linux',
-      'Notion',
-      'Figma',
-      'Trello',
-      'Kanban',
-      'Documentação técnica',
-    ],
-  },
+  { category: 'Desenvolvimento', description: 'Desenvolvimento de interfaces e soluções mobile/web.', skills: ['React', 'React Native', 'Expo', 'TypeScript', 'JavaScript', 'Python', 'Node.js', 'APIs REST', 'HTML', 'CSS', 'Tailwind CSS', 'C'] },
+  { category: 'Produto', description: 'Competências de produto complementares ao desenvolvimento.', skills: ['Discovery', 'MVP', 'User stories', 'Priorização', 'Regras de negócio', 'Visão de usuário', 'Comunicação com stakeholders'] },
+  { category: 'IA & Pesquisa', description: 'Aplicação de IA, investigação e comunicação técnica.', skills: ['IA aplicada', 'Gemini API', 'Automação com IA', 'Revisão bibliográfica', 'Análise comparativa', 'Escrita técnica'] },
+  { category: 'Ferramentas', description: 'Ferramentas de apoio ao desenvolvimento e colaboração.', skills: ['Git', 'GitHub', 'VS Code', 'Linux', 'Figma', 'Notion', 'Trello', 'Kanban', 'Oracle Cloud'] },
 ];
