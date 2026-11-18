@@ -16,15 +16,6 @@ const projectIcons: Record<string, ComponentType<{ size?: number; className?: st
   'IA na Robótica Educacional': BrainCircuit,
 };
 
-const statusStyles: Record<string, string> = {
-  'Em desenvolvimento — aplicação funcional e em uso.':
-    'border-portfolio-blue/40 bg-portfolio-blue/15 text-portfolio-text',
-  'Em desenvolvimento':
-    'border-portfolio-blue/30 bg-portfolio-blue/10 text-portfolio-lilac',
-  'Pesquisa acadêmica em desenvolvimento':
-    'border-portfolio-lilac/30 bg-portfolio-lilac/10 text-portfolio-lilac',
-};
-
 const projectAccents: Record<
   string,
   {
@@ -104,9 +95,6 @@ function ProjectShowcaseCard({
   const accent = projectAccents[project.title] ?? {
     subtitle: 'Projeto de tecnologia e produto digital',
   };
-  const statusClass =
-    statusStyles[project.status] ??
-    'border-white/10 bg-white/[0.04] text-portfolio-muted';
 
   return (
     <motion.article
@@ -170,7 +158,7 @@ function ProjectShowcaseCard({
         </div>
 
         <span
-          className={`max-w-full rounded-full border px-3 py-1 text-xs font-semibold ${statusClass}`}
+          className="max-w-full rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10 px-3 py-1 text-xs font-semibold text-portfolio-lilac"
         >
           {project.cover?.status ?? project.status}
         </span>
@@ -206,7 +194,7 @@ function ProjectShowcaseCard({
       <div className="mt-6 flex flex-wrap gap-2">
         {(project.cover?.tags ?? project.tags.slice(0, 4)).map((tag) => (
           <span
-            className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs font-semibold text-portfolio-muted transition duration-200 group-hover:border-portfolio-purple/35"
+            className="rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs font-semibold text-portfolio-muted transition duration-200 group-hover:border-portfolio-lilac/35"
             key={`${project.title}-${tag}`}
           >
             {tag}

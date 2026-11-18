@@ -6,7 +6,7 @@ import {
   useScroll,
 } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const navItems = [
   { label: 'Início', href: '#inicio' },
@@ -26,33 +26,75 @@ export function Header() {
   const prefersReducedMotion = useReducedMotion();
   const { scrollY, scrollYProgress } = useScroll();
 
-  const updateActiveSection = useCallback(() => {
-    const activationLine = 136;
-    let currentHref = '#inicio';
-
-    navItems.forEach((item) => {
-      const section = document.getElementById(item.href.slice(1));
-
-      if (section && section.getBoundingClientRect().top <= activationLine) {
-        currentHref = item.href;
-      }
-    });
-
-    if (
-      window.innerHeight + window.scrollY >=
-      document.documentElement.scrollHeight - 24
-    ) {
-      currentHref = '#contato';
-    }
-
-    setActiveHref((current) =>
-      current === currentHref ? current : currentHref,
-    );
-  }, []);
+  const navigationTargetRef = useRef<string | null>(null);
 
   useEffect(() => {
-    updateActiveSection();
-  }, [updateActiveSection]);
+    const sections = navItems.flatMap(({ href }) => {
+      const section = document.getElementById(href.slice(1));
+      return section ? [section] : [];
+    });
+    const visible = new Set<string>();
+    const atBottom = () =>
+      window.scrollY > 0 &&
+      window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4;
+    const syncActive = () => {
+      if (navigationTargetRef.current) return;
+      if (atBottom()) {
+        setActiveHref('#contato');
+        return;
+      }
+      if (window.scrollY <= 24) {
+        setActiveHref('#inicio');
+        return;
+      }
+      const current = navItems.find(({ href }) => visible.has(href));
+      if (current) setActiveHref(current.href);
+    };
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        const href = '#' + entry.target.id;
+        if (entry.isIntersecting) visible.add(href);
+        else visible.delete(href);
+      }
+      const target = navigationTargetRef.current;
+      if (target && visible.has(target)) {
+        navigationTargetRef.current = null;
+        setActiveHref(target);
+        return;
+      }
+      syncActive();
+    }, { rootMargin: '-96px 0px -65% 0px', threshold: 0 });
+    sections.forEach((section) => observer.observe(section));
+
+    // Debounced scroll completion also covers browsers without scrollend.
+    let settleTimer: ReturnType<typeof setTimeout> | undefined;
+    const settle = () => {
+      navigationTargetRef.current = null;
+      syncActive();
+    };
+    const onScroll = () => {
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(settle, 180);
+    };
+    const interrupt = () => { navigationTargetRef.current = null; };
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) interrupt();
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('scrollend', settle);
+    window.addEventListener('wheel', interrupt, { passive: true });
+    window.addEventListener('touchstart', interrupt, { passive: true });
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      observer.disconnect();
+      clearTimeout(settleTimer);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scrollend', settle);
+      window.removeEventListener('wheel', interrupt);
+      window.removeEventListener('touchstart', interrupt);
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     if (!isOpen) {
@@ -76,10 +118,10 @@ export function Header() {
       return current === next ? current : next;
     });
 
-    updateActiveSection();
   });
 
   const handleNavigation = (href: string) => {
+    navigationTargetRef.current = href;
     setActiveHref(href);
     setIsOpen(false);
   };
@@ -102,9 +144,7 @@ export function Header() {
           href="#inicio"
           onClick={() => handleNavigation('#inicio')}
         >
-          <span className="relative grid size-8 place-items-center rounded-full border border-white/10 bg-white/[0.04] transition duration-300 group-hover:border-portfolio-lilac/45 group-hover:bg-portfolio-lilac/10">
-            <span className="relative z-10">A</span>
-          </span>
+          <img src="/favicon.svg" alt="" aria-hidden="true" className="size-9 shrink-0 transition-opacity duration-200 group-hover:opacity-90" />
           <span className="transition duration-200 group-hover:text-portfolio-lilac">Ane</span>
         </a>
 
@@ -131,7 +171,7 @@ export function Header() {
                     transition={
                       prefersReducedMotion
                         ? { duration: 0 }
-                        : { type: 'spring', stiffness: 420, damping: 34 }
+                        : { type: 'tween', duration: 0.2, ease: [0.22, 1, 0.36, 1] }
                     }
                   />
                 )}
