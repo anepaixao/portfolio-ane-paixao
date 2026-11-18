@@ -47,7 +47,7 @@ export function Experience() {
           >
             Minha Trajetória 
           </h2>
-          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
+          <div className="mt-6 h-1 w-20 rounded-full bg-portfolio-lilac" />
         </div>
 
         <div
@@ -56,11 +56,11 @@ export function Experience() {
         >
           <div
             aria-hidden="true"
-            className="absolute bottom-6 left-5 top-3 w-px rounded-full bg-white/10 sm:left-6 lg:bottom-8 lg:top-3"
+            className="absolute z-0 bottom-6 left-5 top-3 w-px rounded-full bg-white/10 sm:left-6 lg:bottom-8 lg:top-3"
           />
           <motion.div
             aria-hidden="true"
-            className="absolute bottom-6 left-5 top-3 w-px origin-top rounded-full bg-gradient-to-b from-portfolio-purple via-portfolio-blue to-portfolio-lilac shadow-[0_0_16px_rgba(109,59,255,0.18)] sm:left-6 lg:bottom-8 lg:top-3"
+            className="absolute z-0 bottom-6 left-5 top-3 w-px origin-top rounded-full bg-portfolio-lilac shadow-black/10 sm:left-6 lg:bottom-8 lg:top-3"
             style={{ scaleY: lineScale }}
           />
 
@@ -93,7 +93,6 @@ function ExperienceTimelineItem({
     index === experiences.length - 1 ? 1.01 : stepProgress + 0.14,
   ];
   const nodeScale = useTransform(progress, inputRange, [1, 1.1, 1.04]);
-  const nodeOpacity = useTransform(progress, inputRange, [0.8, 1, 1]);
   const nodeBorderColor = useTransform(progress, inputRange, [
     'rgba(255,255,255,0.14)',
     'rgba(167,139,250,0.82)',
@@ -101,13 +100,13 @@ function ExperienceTimelineItem({
   ]);
   const nodeBackground = useTransform(progress, inputRange, [
     'rgba(16,7,43,1)',
-    'rgba(109,59,255,0.42)',
-    'rgba(59,130,246,0.18)',
+    '#3b2a63',
+    '#2a1d47',
   ]);
   const nodeBoxShadow = useTransform(progress, inputRange, [
     '0 8px 14px rgba(0,0,0,0.12)',
-    '0 0 26px rgba(109,59,255,0.32)',
-    '0 10px 20px rgba(109,59,255,0.14)',
+    '0 0 26px rgba(0,0,0,0.32)',
+    '0 10px 20px rgba(0,0,0,0.14)',
   ]);
   const nodeColor = useTransform(progress, inputRange, [
     'rgb(167,139,250)',
@@ -127,8 +126,8 @@ function ExperienceTimelineItem({
   ]);
   const cardBoxShadow = useTransform(progress, inputRange, [
     '0 10px 18px rgba(0,0,0,0.12)',
-    '0 22px 42px rgba(59,130,246,0.18)',
-    '0 14px 28px rgba(109,59,255,0.1)',
+    '0 22px 42px rgba(0,0,0,0.18)',
+    '0 14px 28px rgba(0,0,0,0.1)',
   ]);
   const accentOpacity = useTransform(progress, inputRange, [0, 1, 0.48]);
 
@@ -141,21 +140,20 @@ function ExperienceTimelineItem({
       viewport={{ once: true, amount: 0.25 }}
       whileInView={prefersReducedMotion ? undefined : { opacity: 1, x: 0, y: 0 }}
     >
-      <div className="absolute -left-12 top-3 flex justify-center sm:-left-14 lg:static lg:flex">
+      <div className="absolute z-10 -left-[46px] top-3 flex justify-center sm:-left-[50px] lg:static lg:flex">
         <motion.span
           className="relative z-10 grid size-9 place-items-center rounded-full border shadow-lg lg:mt-3"
           style={{
             backgroundColor: prefersReducedMotion
-              ? 'rgba(59,130,246,0.18)'
+              ? '#2a1d47'
               : nodeBackground,
             borderColor: prefersReducedMotion
               ? 'rgba(167,139,250,0.52)'
               : nodeBorderColor,
             boxShadow: prefersReducedMotion
-              ? '0 10px 20px rgba(109,59,255,0.14)'
+              ? '0 10px 20px rgba(0,0,0,0.14)'
               : nodeBoxShadow,
             color: prefersReducedMotion ? 'rgb(196,181,253)' : nodeColor,
-            opacity: prefersReducedMotion ? 1 : nodeOpacity,
             scale: prefersReducedMotion ? 1 : nodeScale,
           }}
         >
@@ -164,7 +162,7 @@ function ExperienceTimelineItem({
       </div>
 
       <motion.div
-        className="relative overflow-hidden rounded-3xl border bg-portfolio-card p-5 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-portfolio-blue/10 sm:p-7"
+        className="relative z-10 overflow-hidden rounded-3xl border bg-portfolio-card p-5 shadow-xl shadow-black/10 transition duration-200 hover:-translate-y-1 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-black/10 sm:p-7"
         style={{
           backgroundColor: prefersReducedMotion
             ? 'rgba(29,20,63,0.98)'
@@ -173,14 +171,14 @@ function ExperienceTimelineItem({
             ? 'rgba(167,139,250,0.24)'
             : cardBorderColor,
           boxShadow: prefersReducedMotion
-            ? '0 14px 28px rgba(109,59,255,0.1)'
+            ? '0 14px 28px rgba(0,0,0,0.1)'
             : cardBoxShadow,
           y: prefersReducedMotion ? 0 : cardY,
         }}
       >
         <motion.span
           aria-hidden="true"
-          className="absolute bottom-6 left-0 top-6 w-1 rounded-r-full bg-gradient-to-b from-portfolio-purple to-portfolio-blue"
+          className="absolute z-0 bottom-6 left-0 top-6 w-1 rounded-r-full bg-portfolio-lilac/10"
           style={{ opacity: prefersReducedMotion ? 0.48 : accentOpacity }}
         />
         <div className="flex flex-wrap items-start justify-between gap-4">
@@ -217,7 +215,7 @@ function ExperienceTimelineItem({
                 className="flex gap-3 text-sm leading-6 text-portfolio-muted"
                 key={`${experience.organization}-${highlight}`}
               >
-                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-portfolio-lilac/10" />
                 <span>{highlight}</span>
               </li>
             ))}

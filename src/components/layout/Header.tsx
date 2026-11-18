@@ -88,7 +88,7 @@ export function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-300 ${
         hasScrolled
-          ? 'border-white/10 bg-portfolio-bg/82 shadow-[0_12px_36px_rgba(4,2,16,0.2)] backdrop-blur-2xl'
+          ? 'border-white/10 bg-portfolio-bg/82 shadow-[0_12px_36px_rgba(4,2,16,0.2)] backdrop-blur-md'
           : 'border-transparent bg-portfolio-bg/52 backdrop-blur-xl'
       }`}
     >
@@ -104,7 +104,6 @@ export function Header() {
         >
           <span className="relative grid size-8 place-items-center rounded-full border border-white/10 bg-white/[0.04] transition duration-300 group-hover:border-portfolio-lilac/45 group-hover:bg-portfolio-lilac/10">
             <span className="relative z-10">A</span>
-            <span className="absolute inset-1 rounded-full bg-gradient-to-br from-portfolio-purple/30 to-portfolio-blue/20 opacity-0 blur-sm transition duration-300 group-hover:opacity-100" />
           </span>
           <span className="transition duration-200 group-hover:text-portfolio-lilac">Ane</span>
         </a>
@@ -127,7 +126,7 @@ export function Header() {
               >
                 {isActive && (
                   <motion.span
-                    className="absolute inset-0 rounded-full border border-portfolio-lilac/25 bg-gradient-to-r from-portfolio-purple/18 to-portfolio-blue/12 shadow-[0_0_18px_rgba(109,59,255,0.12)]"
+                    className="absolute inset-0 rounded-full border border-portfolio-lilac/25 bg-portfolio-lilac/10 shadow-black/10"
                     layoutId="active-navigation-pill"
                     transition={
                       prefersReducedMotion
@@ -169,7 +168,7 @@ export function Header() {
         {isOpen && (
           <motion.div
             animate={{ opacity: 1, y: 0 }}
-            className="absolute inset-x-0 top-full max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-white/10 bg-portfolio-bg/96 shadow-[0_18px_44px_rgba(4,2,16,0.28)] backdrop-blur-2xl lg:hidden"
+            className="absolute inset-x-0 top-full max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-white/10 bg-portfolio-bg/96 shadow-[0_18px_44px_rgba(4,2,16,0.28)] backdrop-blur-md lg:hidden"
             exit={{ opacity: 0, y: -8 }}
             id="mobile-navigation"
             initial={{ opacity: 0, y: -8 }}
@@ -198,7 +197,7 @@ export function Header() {
                     }}
                   >
                     {isActive && (
-                      <span className="absolute inset-0 border border-portfolio-lilac/20 bg-gradient-to-r from-portfolio-purple/16 to-portfolio-blue/8" />
+                      <span className="absolute inset-0 border border-portfolio-lilac/20 bg-portfolio-lilac/10" />
                     )}
                     <span className="relative z-10">{item.label}</span>
                   </motion.a>
@@ -211,7 +210,7 @@ export function Header() {
 
       <motion.div
         aria-hidden="true"
-        className="absolute inset-x-0 bottom-[-1px] h-px origin-left bg-gradient-to-r from-portfolio-purple via-portfolio-lilac to-portfolio-blue"
+        className="absolute inset-x-0 bottom-[-1px] h-px origin-left bg-portfolio-lilac"
         style={{ scaleX: scrollYProgress }}
       />
     </header>

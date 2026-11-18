@@ -32,7 +32,7 @@ export function About() {
           >
             Entre tecnologia, produto e pessoas
           </h2>
-          <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
+          <div className="mt-6 h-1 w-20 rounded-full bg-portfolio-lilac" />
 
           <div className="mt-8 rounded-3xl border border-white/10 bg-portfolio-card/75 p-6 shadow-xl shadow-black/10 sm:p-8">
             <div className="space-y-5 text-base leading-8 text-portfolio-muted sm:text-lg">
@@ -60,7 +60,7 @@ export function About() {
                 transition={{ delay: index * 0.06, duration: 0.45 }}
                 viewport={{ once: true, amount: 0.35 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className="rounded-3xl border border-white/10 bg-portfolio-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-portfolio-purple/10"
+                className="rounded-3xl border border-white/10 bg-portfolio-card p-5 transition duration-200 hover:-translate-y-0.5 hover:border-portfolio-lilac/60 hover:shadow-lg hover:shadow-black/10"
                 key={label}
               >
                 <div className="mb-5 grid size-10 place-items-center rounded-2xl border border-portfolio-blue/25 bg-portfolio-blue/10 text-portfolio-lilac">
@@ -75,11 +75,8 @@ export function About() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[20rem] sm:max-w-sm lg:max-w-md">
-          <div className="absolute -inset-5 rounded-[2.5rem] bg-gradient-to-br from-portfolio-purple/30 via-portfolio-blue/20 to-portfolio-lilac/20 blur-2xl" />
-          <div className="absolute -right-4 top-8 size-24 rounded-full border border-portfolio-blue/25 bg-portfolio-blue/10 blur-sm" />
-          <div className="absolute -bottom-5 -left-5 size-28 rounded-full border border-portfolio-lilac/25 bg-portfolio-purple/10 blur-sm" />
 
-          <div className="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-portfolio-purple/45 via-portfolio-blue/35 to-portfolio-lilac/25 p-[1px] shadow-2xl shadow-portfolio-purple/20">
+          <div className="relative rounded-[2rem] border border-white/10 bg-portfolio-lilac/10 p-[1px] shadow-2xl shadow-black/10">
             <div className="rounded-[1.95rem] bg-portfolio-card/80 p-3 backdrop-blur">
               <img
                 alt="Foto de perfil de Ane Paixão"

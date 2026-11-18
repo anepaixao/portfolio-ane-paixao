@@ -28,28 +28,16 @@ const statusStyles: Record<string, string> = {
 const projectAccents: Record<
   string,
   {
-    glow: string;
-    icon: string;
-    line: string;
     subtitle: string;
   }
 > = {
   'Macuco Entregas': {
-    glow: 'group-hover:shadow-portfolio-purple/10',
-    icon: 'from-portfolio-purple/24 via-portfolio-blue/12 to-portfolio-lilac/18',
-    line: 'from-portfolio-purple via-portfolio-lilac to-transparent',
     subtitle: 'Aplicativo de Delivery Regional',
   },
   FinanceirAne: {
-    glow: 'group-hover:shadow-portfolio-blue/10',
-    icon: 'from-portfolio-blue/24 via-portfolio-purple/12 to-portfolio-lilac/18',
-    line: 'from-portfolio-blue via-portfolio-lilac to-transparent',
     subtitle: 'Assistente Financeiro com IA Generativa',
   },
   'IA na Robótica Educacional': {
-    glow: 'group-hover:shadow-portfolio-lilac/10',
-    icon: 'from-portfolio-lilac/22 via-portfolio-purple/14 to-portfolio-blue/14',
-    line: 'from-portfolio-lilac via-portfolio-purple to-transparent',
     subtitle: 'Pesquisa Aplicada em Inteligência Artificial e Educação STEM',
   },
 };
@@ -80,7 +68,7 @@ export function Projects() {
             >
               Projetos em destaque
             </h2>
-            <div className="mt-6 h-1 w-20 rounded-full bg-gradient-to-r from-portfolio-purple to-portfolio-blue" />
+            <div className="mt-6 h-1 w-20 rounded-full bg-portfolio-lilac" />
           </div>
 
         </div>
@@ -114,9 +102,6 @@ function ProjectShowcaseCard({
   const ProjectIcon = projectIcons[project.title] ?? FolderKanban;
   const isFeatured = project.title === 'FinanceirAne';
   const accent = projectAccents[project.title] ?? {
-    glow: 'group-hover:shadow-portfolio-purple/10',
-    icon: 'from-portfolio-purple/20 via-portfolio-blue/12 to-portfolio-lilac/16',
-    line: 'from-portfolio-purple via-portfolio-blue to-transparent',
     subtitle: 'Projeto de tecnologia e produto digital',
   };
   const statusClass =
@@ -125,7 +110,7 @@ function ProjectShowcaseCard({
 
   return (
     <motion.article
-      className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-portfolio-card/95 p-5 shadow-xl shadow-black/10 transition duration-300 hover:border-portfolio-lilac/45 sm:p-6 ${isFeatured ? 'md:col-span-2' : ''} ${accent.glow}`}
+      className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-portfolio-card/95 p-5 shadow-xl shadow-black/10 transition duration-300 hover:border-portfolio-lilac/45 sm:p-6 ${isFeatured ? 'md:col-span-2' : ''} `}
       initial={
         prefersReducedMotion
           ? false
@@ -154,7 +139,7 @@ function ProjectShowcaseCard({
     >
       <div
         aria-hidden="true"
-        className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${accent.line} opacity-70`}
+        className="absolute inset-x-0 top-0 h-px bg-portfolio-lilac/60 opacity-70"
       />
 
       <div className={isFeatured ? 'grid min-w-0 gap-6 lg:grid-cols-2 lg:gap-10' : ''}>
@@ -162,7 +147,7 @@ function ProjectShowcaseCard({
       <div className="flex flex-col items-start gap-4">
         <div className="flex min-w-0 items-start gap-4">
           <motion.span
-            className={`relative mt-1 grid size-12 shrink-0 place-items-center rounded-2xl border border-portfolio-lilac/25 bg-gradient-to-br text-portfolio-lilac shadow-lg shadow-portfolio-purple/10 ${accent.icon}`}
+            className={`relative mt-1 grid size-12 shrink-0 place-items-center rounded-2xl border border-portfolio-lilac/25 bg-portfolio-lilac/10 text-portfolio-lilac shadow-lg shadow-black/10 `}
             whileHover={
               prefersReducedMotion ? undefined : { rotate: -3, scale: 1.04 }
             }
