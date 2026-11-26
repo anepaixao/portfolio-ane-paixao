@@ -5,7 +5,7 @@ import {
   useTransform,
 } from 'framer-motion';
 import type { MotionValue } from 'framer-motion';
-import { BriefcaseBusiness, Milestone } from 'lucide-react';
+import { GraduationCap, Milestone } from 'lucide-react';
 import { useRef } from 'react';
 import { experiences } from '../../data/experiences';
 
@@ -36,17 +36,18 @@ export function Experience() {
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-portfolio-lilac">
             <span className="inline-flex items-center gap-2">
               <span className="grid size-7 place-items-center rounded-full border border-portfolio-lilac/30 bg-portfolio-lilac/10">
-                <BriefcaseBusiness aria-hidden="true" size={15} />
+                <GraduationCap aria-hidden="true" size={15} />
               </span>
-              Experiências
+              Trajetória
             </span>
           </p>
           <h2
             className="mt-4 text-3xl font-black leading-tight text-portfolio-text sm:text-4xl lg:text-5xl"
             id="experiences-title"
           >
-            Minha Trajetória 
+            Minha Trajetória
           </h2>
+          <p className="mt-5 text-base leading-7 text-portfolio-muted">Um pouco do meu caminho na computação, entre aprendizados, pesquisa e novas experiências.</p>
           <div className="mt-6 h-1 w-20 rounded-full bg-portfolio-lilac" />
         </div>
 
@@ -68,7 +69,7 @@ export function Experience() {
             <ExperienceTimelineItem
               experience={experience}
               index={index}
-              key={`${experience.organization}-${experience.role}`}
+              key={`${experience.institution}-${experience.title}`}
               prefersReducedMotion={Boolean(prefersReducedMotion)}
               progress={scrollYProgress}
             />
@@ -94,9 +95,9 @@ function ExperienceTimelineItem({
   ];
   const nodeScale = useTransform(progress, inputRange, [1, 1.1, 1.04]);
   const nodeBorderColor = useTransform(progress, inputRange, [
-    'rgba(255,255,255,0.14)',
-    'rgba(167,139,250,0.82)',
-    'rgba(167,139,250,0.52)',
+    'rgba(167,139,250,0.3)',
+    'rgba(167,139,250,0.9)',
+    'rgba(167,139,250,0.65)',
   ]);
   const nodeBackground = useTransform(progress, inputRange, [
     'rgba(16,7,43,1)',
@@ -135,7 +136,7 @@ function ExperienceTimelineItem({
     <motion.article
       className="relative lg:grid lg:grid-cols-[3rem_1fr] lg:gap-6 lg:pb-8"
       initial={prefersReducedMotion ? false : { opacity: 0, x: 12, y: 10 }}
-      key={`${experience.organization}-${experience.role}`}
+      key={`${experience.institution}-${experience.title}`}
       transition={{ delay: prefersReducedMotion ? 0 : index * 0.08, duration: prefersReducedMotion ? 0 : 0.45 }}
       viewport={{ once: true, amount: 0.25 }}
       whileInView={prefersReducedMotion ? undefined : { opacity: 1, x: 0, y: 0 }}
@@ -148,7 +149,7 @@ function ExperienceTimelineItem({
               ? '#2a1d47'
               : nodeBackground,
             borderColor: prefersReducedMotion
-              ? 'rgba(167,139,250,0.52)'
+              ? 'rgba(167,139,250,0.65)'
               : nodeBorderColor,
             boxShadow: prefersReducedMotion
               ? '0 10px 20px rgba(0,0,0,0.14)'
@@ -157,7 +158,7 @@ function ExperienceTimelineItem({
             scale: prefersReducedMotion ? 1 : nodeScale,
           }}
         >
-          <Milestone aria-hidden="true" size={15} />
+          <Milestone aria-hidden="true" size={16} strokeWidth={2.25} />
         </motion.span>
       </div>
 
@@ -181,46 +182,24 @@ function ExperienceTimelineItem({
           className="absolute z-0 bottom-6 left-0 top-6 w-1 rounded-r-full bg-portfolio-lilac/10"
           style={{ opacity: prefersReducedMotion ? 0.48 : accentOpacity }}
         />
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold text-portfolio-lilac">
-              {experience.organization}
-            </p>
-            <h3 className="mt-2 text-xl font-bold leading-snug text-portfolio-text sm:text-2xl">
-              {experience.role}
-            </h3>
-          </div>
-
-          <div className="flex flex-wrap gap-2">
-            <span className="rounded-full border border-portfolio-blue/30 bg-portfolio-blue/10 px-3 py-1 text-xs font-semibold text-portfolio-lilac">
-              {experience.type}
-            </span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-semibold text-portfolio-muted">
-              {experience.period}
-            </span>
-          </div>
-        </div>
-
-        <p className="mt-5 leading-7 text-portfolio-muted">
-          {experience.description}
-        </p>
-
-        <div className="mt-7 border-t border-white/10 pt-5">
-          <p className="text-sm font-bold uppercase tracking-[0.14em] text-portfolio-lilac">
-            Destaques
+        <p className="text-sm font-semibold text-portfolio-lilac">{experience.period}</p>
+        <h3 className="mt-3 text-xl font-bold leading-snug text-portfolio-text sm:text-2xl">
+          {experience.title}
+        </h3>
+        <p className="mt-2 text-sm leading-6 text-portfolio-muted">{experience.institution}</p>
+        <p className="mt-5 leading-7 text-portfolio-muted">{experience.description}</p>
+        {experience.note && (
+          <p className="mt-4 border-l-2 border-portfolio-lilac/30 pl-3 text-sm leading-6 text-portfolio-muted">
+            {experience.note}
           </p>
-          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-            {experience.highlights.map((highlight) => (
-              <li
-                className="flex gap-3 text-sm leading-6 text-portfolio-muted"
-                key={`${experience.organization}-${highlight}`}
-              >
-                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-portfolio-lilac/10" />
-                <span>{highlight}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
+        )}
+        <ul className="mt-5 flex flex-wrap gap-2">
+          {experience.tags.map((tag) => (
+            <li key={tag} className="max-w-full break-words rounded border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs leading-5 text-portfolio-muted">
+              {tag}
+            </li>
+          ))}
+        </ul>
       </motion.div>
     </motion.article>
   );
