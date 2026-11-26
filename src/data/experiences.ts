@@ -1,56 +1,33 @@
 export type Experience = {
-  role: string;
-  organization: string;
   period: string;
+  title: string;
+  institution: string;
   description: string;
-  highlights: string[];
-  type: string;
+  note?: string;
+  tags: string[];
 };
 
 export const experiences: Experience[] = [
   {
-    role: 'CEO, Cofundadora, Produto e Front-end/Mobile',
-    organization: 'Blue Eggs',
-    period: 'Out 2025 — atual',
-    description:
-      'Atuação na liderança da Blue Eggs e na construção do Macuco Entregas, conectando definição de escopo, regras de negócio, experiência do usuário e desenvolvimento front-end/mobile em um MVP voltado ao comércio local de Buerarema-BA.',
-    highlights: [
-      'Estruturação do produto e escopo do MVP',
-      'Organização de regras de negócio',
-      'Desenvolvimento front-end/mobile com React Native, Expo e TypeScript',
-      'Alinhamento entre equipe, produto e experiência do usuário',
-      'Foco em soluções digitais para comércio local',
-    ],
-    type: 'Produto & Mobile',
+    period: '2024 — Atual',
+    title: 'Graduação em Ciência da Computação',
+    institution: 'Universidade Estadual de Santa Cruz (UESC)',
+    description: 'Formação em Ciência da Computação com base em programação, algoritmos, estruturas de dados, matemática, lógica e fundamentos de sistemas computacionais, articulando teoria e prática para compreender, projetar e desenvolver soluções em software e tecnologia.',
+    tags: ['Ciência da Computação', 'Programação', 'Matemática', 'Sistemas Computacionais'],
   },
   {
-    role: 'Projetos de Produto, IA e Desenvolvimento',
-organization: 'Projetos independentes',
-    period: 'Fev 2026 — atual',
-    description:
-      'Projeto de agente financeiro pessoal criado para organizar contas, acompanhar gastos, identificar possibilidades de economia e apoiar o planejamento financeiro de forma prática e personalizada.',
-    highlights: [
-      'Organização de contas e categorias financeiras',
-      'Planejamento de funcionalidades do agente',
-      'Foco em usabilidade e clareza das informações',
-      'Aplicação de produto digital a um problema real',
-      'Estruturação inicial de solução com IA aplicada',
-    ],
-    type: 'Software & IA Aplicada',
+    period: 'Fev/2026 — Set/2026',
+    title: 'Bolsista de Iniciação Científica · 1º ciclo',
+    institution: 'Inteligência Artificial na Robótica Educacional · UESC',
+    description: 'Pesquisa e desenvolvimento de soluções com IA aplicada à Robótica Educacional, unindo revisão bibliográfica, desenvolvimento em Python, arquitetura de software, testes e construção de protótipos educacionais e estações robóticas.',
+    note: 'Resultados apresentados no 32º Seminário de Iniciação Científica da UESC.',
+    tags: ['Pesquisa científica', 'Python', 'IA generativa', 'LLMs', 'Prototipagem', 'STEM'],
   },
   {
-    role: 'Pesquisadora',
-    organization: 'UESC',
-    period: 'Fev 2026 — atual',
-    description:
-      'Projeto de iniciação científica sobre o uso de inteligência artificial na robótica educacional, investigando potencialidades, desafios e aplicações no contexto da educação STEM.',
-    highlights: [
-      'Pesquisa em IA aplicada',
-      'Análise comparativa de ferramentas',
-      'Revisão bibliográfica',
-      'Escrita e comunicação técnica',
-      'Investigação sobre educação STEM',
-    ],
-    type: 'Pesquisa Acadêmica',
+    period: 'Out/2026 — Atual',
+    title: 'Iniciação Científica · 2º ciclo',
+    institution: 'IA aplicada e desenvolvimento de protótipos educacionais · UESC',
+    description: 'Continuidade da pesquisa, com evolução do software e da arquitetura, desenvolvimento em Python, integração entre componentes computacionais e físicos e construção de novos protótipos educacionais para o ensino de Matemática.',
+    tags: ['Python', 'Arquitetura de software', 'IA aplicada', 'Prototipagem'],
   },
 ];
