@@ -144,8 +144,7 @@ export function Header() {
           href="#inicio"
           onClick={() => handleNavigation('#inicio')}
         >
-          <img src="/favicon.svg" alt="" aria-hidden="true" className="size-9 shrink-0 transition-opacity duration-200 group-hover:opacity-90" />
-          <span className="transition duration-200 group-hover:text-portfolio-lilac">Ane</span>
+          <img src="/brand/ane-squircle-colorido.svg" alt="" aria-hidden="true" className="size-9 shrink-0 transition-opacity duration-200 group-hover:opacity-90" />
         </a>
 
         <div className="hidden items-center gap-1 rounded-full border border-white/[0.08] bg-white/[0.025] p-1 lg:flex">
